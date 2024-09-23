@@ -1,0 +1,277 @@
+[
+    {
+        "courseName": "Harassment",
+        "module": {
+            "heading": "Harassment",
+            "URL": "#",
+            "hasAudio": "false",
+            "hasVideo": "false",
+            "page": [
+                {
+                    "heading": "Harassment-Free Workplace",
+                    "URL": "pages/module_1/page_1/page.html",
+                    "hasAudio": "true",
+                    "hasVideo": "false",
+                    "subpage": []
+                },{
+                    "heading": "Welcome!",
+                    "URL": "pages/module_1/page_2/page.html",
+                    "hasAudio": "true",
+                    "hasVideo": "false",
+                    "subpage": []
+                },{
+                    "heading": "Course Overview",
+                    "URL": "pages/module_1/page_3/page.html",
+                    "hasAudio": "true",
+                    "hasVideo": "false",
+                    "subpage": []
+                },{
+                    "heading": "Course Objectives",
+                    "URL": "pages/module_1/page_4/page.html",
+                    "hasAudio": "true",
+                    "hasVideo": "false",
+                    "subpage": []
+                },
+                {
+                    "heading": "Workplace Harassment",
+                    "URL": "pages/module_1/page_6/page.html",
+                    "hasAudio": "true",
+                    "hasVideo": "false",
+                    "subpage": []
+                },{
+                  "heading": "Workplace Harassment",
+                  "URL": "pages/module_1/page_8/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false",
+                  "subpage": []
+                },{
+                    "heading": "Harassment Review",
+                    "URL": "pages/module_1/page_7/page.html",
+                    "hasAudio": "true",
+                    "hasVideo": "false",
+                    "subpage": []
+                },{
+                  "heading": "Hostile Work Environment",
+                  "URL": "pages/module_1/page_10/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false",
+                  "subpage": []
+                },{
+                    "heading": "Hostile Work Environment Review ",
+                    "URL": "pages/module_1/page_9/page.html",
+                    "hasAudio": "true",
+                    "hasVideo": "false",
+                    "subpage": []
+                },
+                {
+                    "heading": "Types of Sexual Harassment",
+                    "URL": "pages/module_1/page_12/page.html",
+                    "hasAudio": "true",
+                    "hasVideo": "false"
+                },
+              {
+                    "heading": "Quid Pro Quo Sexual Harassment",
+                    "URL": "pages/module_1/page_13/page.html",
+                    "hasAudio": "true",
+                    "hasVideo": "false"
+                },
+                {
+                "heading": "Quid Pro Quo Sexual Harassment Review",
+                "URL": "pages/module_1/page_11/page.html",
+                "hasAudio": "true",
+                "hasVideo": "false"
+            },
+
+                {
+                "heading": "Harassment based on a Sexually Hostile Environment",
+                "URL": "pages/module_1/page_15/page.html",
+                "hasAudio": "true",
+                "hasVideo": "false",
+                "subpage": []
+            },{
+              "heading": "Harassment based on a Sexually Hostile Environment Review",
+              "URL": "pages/module_1/page_14/page.html",
+              "hasAudio": "false",
+              "hasVideo": "true"
+          },{
+                "heading": "Leviton’s Harassment Policy",
+                "URL": "pages/module_1/page_16/page.html",
+                "hasAudio": "true",
+                "hasVideo": "false",
+                "subpage": []
+            },{
+              "heading": "Harassment Policy Review",
+              "URL": "pages/module_1/page_18/page.html",
+              "hasAudio": "true",
+              "hasVideo": "false",
+              "subpage": []
+          },{
+                "heading": "Who Can Be A Harasser?",
+                "URL": "pages/module_1/page_17/page.html",
+                "hasAudio": "true",
+                "hasVideo": "false",
+                "subpage": []
+            },{
+              "heading": "Harassment Liability Review",
+              "URL": "pages/module_1/page_20/page.html",
+              "hasAudio": "true",
+              "hasVideo": "false"
+            },{
+                "heading": "Third-Party Harassment",
+                "URL": "pages/module_1/page_19/page.html",
+                "hasAudio": "true",
+                "hasVideo": "false",
+                "subpage": []
+            },{
+                  "heading": "Workplace Discrimination",
+                  "URL": "pages/module_1/page_21/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },{
+                  "heading": "Workplace Discrimination",
+                  "URL": "pages/module_1/page_22/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },{
+                  "heading": "Discrimination Theory Review",
+                  "URL": "pages/module_1/page_23/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Workplace Discrimination Continued",
+                  "URL": "pages/module_1/page_24/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Discrimination Review",
+                  "URL": "pages/module_1/page_25/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Examples of Laws Prohibiting Discrimination",
+                  "URL": "pages/module_1/page_26/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Discrimination Law Review",
+                  "URL": "pages/module_1/page_27/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Retaliation",
+                  "URL": "pages/module_1/page_28/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Leviton Non-Discrimination Policy",
+                  "URL": "pages/module_1/page_30/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Discrimination Policy Review",
+                  "URL": "pages/module_1/page_29/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Reporting Harassment",
+                  "URL": "pages/module_1/page_31/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Who should report Harassment or Discrimination?",
+                  "URL": "pages/module_1/page_32/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Discrimination Reporting Process",
+                  "URL": "pages/module_1/page_34/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Reporting Harassment Review ",
+                  "URL": "pages/module_1/page_33/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Discrimination Reporting Process",
+                  "URL": "pages/module_1/page_36/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Reporting Harassment Review ",
+                  "URL": "pages/module_1/page_35/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Workplace Diversity",
+                  "URL": "pages/module_1/page_37/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Diversity in the Workplace",
+                  "URL": "pages/module_1/page_39/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Workplace Diversity",
+                  "URL": "pages/module_1/page_40/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Workplace Diversity Review",
+                  "URL": "pages/module_1/page_38/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Benefits of Embracing Diversity",
+                  "URL": "pages/module_1/page_41/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Embracing Diversity Review",
+                  "URL": "pages/module_1/page_42/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Diversity Implementation",
+                  "URL": "pages/module_1/page_43/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+                {
+                  "heading": "Diversity Implementation Review",
+                  "URL": "pages/module_1/page_44/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                },
+
+                {
+                  "heading": "Congratulations",
+                  "URL": "pages/module_1/page_45/page.html",
+                  "hasAudio": "true",
+                  "hasVideo": "false"
+                }
+              ]
+        }
+    }
+]

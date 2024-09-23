@@ -1,0 +1,154 @@
+[{
+        "letter": "A",
+        "keywords": [{
+            "word": "Advantage VRF Selection Program",
+            "description": "Advantage VRF Selection Program is a step-by-step system design tool that generates  validated design, including piping and wiring schematics from inputs such as design conditions, loads, and locations."
+        }, {
+            "word": "ASHRAE",
+            "description": "ASHRAE, founded in 1894, is a global society aiming at advancing the arts and sciences of heating, ventilating, air conditioning, and refrigerating to serve humanity and promote a sustainable world."
+        }, {
+            "word": "Auto-commissioning",
+            "description": "Auto-commissioning is the process of starting the system when the outdoor unit display shows “UP,” which means the system is unprepared and not ready to run on its own. Auto-commissioning can be initiated by pushing the K1 button and holding it for 3 seconds."
+        }, {
+            "word": "Acrylonitrile Butadiene Rubber",
+            "description": "Acrylonitrile butadiene rubber is a synthetic rubber copolymer of acrylonitrile (ACN) and butadiene, also known as nitrile rubber."
+        }]
+    },
+
+    {
+        "letter": "B",
+        "keywords": [{
+            "word": "BACnet®",
+            "description": "BACnet® is a communications protocol for building automation and control networks. It is an ASHRAE, ANSI, and ISO standard protocol."
+        }]
+    },
+
+    {
+        "letter": "C",
+        "keywords": []
+    },
+
+    {
+        "letter": "D",
+        "keywords": []
+    },
+
+    {
+        "letter": "E",
+        "keywords": [{
+            "word": "Electronic Expansion Valve(EEV)",
+            "description": "Electronic Expansion Valves(EEVs) control the flow of refrigerant entering a direct expansion evaporator in response to signals sent to them by an electronic controller."
+        }, {
+            "word": "Error Code",
+            "description": "In a Trane VRF system, an error code refers to an error in the functioning of the system and also provides the details of the error such as the location of the error, the type of the error, and whether it is an actual error or warning."
+        }, {
+            "word": "Ethylene Propylene Diene Monomer(EPDM)",
+            "description": "Ethylene propylene diene monomer is a type of synthetic rubber characterized by a wide range of applications."
+        }]
+    },
+
+    {
+        "letter": "F",
+        "keywords": []
+    },
+
+    {
+        "letter": "G",
+        "keywords": []
+    },
+
+    {
+        "letter": "H",
+        "keywords": []
+    },
+
+    {
+        "letter": "I",
+        "keywords": []
+    },
+
+    {
+        "letter": "J",
+        "keywords": []
+    },
+
+    {
+        "letter": "K",
+        "keywords": []
+    },
+
+    {
+        "letter": "L",
+        "keywords": []
+    },
+
+    {
+        "letter": "M",
+        "keywords": []
+    },
+
+    {
+        "letter": "N",
+        "keywords": []
+    },
+
+    {
+        "letter": "O",
+        "keywords": []
+    },
+
+    {
+        "letter": "P",
+        "keywords": []
+    },
+
+    {
+        "letter": "Q",
+        "keywords": []
+    },
+
+    {
+        "letter": "R",
+        "keywords": []
+    },
+
+    {
+        "letter": "S",
+        "keywords": []
+    },
+
+    {
+        "letter": "T",
+        "keywords": []
+    },
+
+    {
+        "letter": "U",
+        "keywords": []
+    },
+
+    {
+        "letter": "V",
+        "keywords": []
+    },
+
+    {
+        "letter": "W",
+        "keywords": []
+    },
+
+    {
+        "letter": "X",
+        "keywords": []
+    },
+
+    {
+        "letter": "Y",
+        "keywords": []
+    },
+
+    {
+        "letter": "Z",
+        "keywords": []
+    }
+]
