@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="_Supplemental_Training" version="1.0" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+      <general>
+        <title>
+          <langstring xml:lang="x-none">Harassment-Free Workplace</langstring>
+        </title>
+        <description>
+          <langstring xml:lang="x-none">Harassment-Free Workplace</langstring>
+        </description>
+      </general>
+      <lifecycle>
+        <version>
+          <langstring xml:lang="x-none">1</langstring>
+        </version>
+        <status>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">Final</langstring>
+          </value>
+        </status>
+      </lifecycle>
+      <metametadata>
+        <metadatascheme>ADL SCORM 1.2</metadatascheme>
+      </metametadata>
+      <educational>
+        <typicallearningtime>
+          <datetime>PT0H0M0S</datetime>
+        </typicallearningtime>
+      </educational>
+      <rights>
+        <cost>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </cost>
+        <copyrightandotherrestrictions>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </copyrightandotherrestrictions>
+      </rights>
+    </lom>
+  </metadata>
+  <organizations default="leviton_ORG">
+    <organization identifier="leviton_ORG">
+      <title>Harassment-Free Workplace</title>
+      <item identifier="LEVITON_SCO" isvisible="true" identifierref="_Supplemental_Training_RES">
+        <title>Harassment-Free Workplace</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="_Supplemental_Training_RES" type="webcontent" href="index.html" adlcp:scormtype="sco">
+		<file href="assets/images/Thumbs.db" />
+		<file href="assets/images/_icon.png" />
+		<file href="assets/images/blackpreload_sprites.png" />
+		<file href="assets/images/f_bg.jpg" />
+		<file href="assets/images/f_bg.png" />
+		<file href="assets/images/f_bg_portrait.jpg" />
+		<file href="assets/images/f_bg_portrait.png" />
+		<file href="assets/images/f_cc.png" />
+		<file href="assets/images/f_glossary.png" />
+		<file href="assets/images/f_help.png" />
+		<file href="assets/images/f_home.png" />
+		<file href="assets/images/f_logo.png" />
+		<file href="assets/images/f_menu.png" />
+		<file href="assets/images/f_minus.png" />
+		<file href="assets/images/f_mute.png" />
+		<file href="assets/images/f_next.png" />
+		<file href="assets/images/f_orientation_info.png" />
+		<file href="assets/images/f_pause.png" />
+		<file href="assets/images/f_play.png" />
+		<file href="assets/images/f_play_big.png" />
+		<file href="assets/images/f_plus.png" />
+		<file href="assets/images/f_prev.png" />
+		<file href="assets/images/f_replay.png" />
+		<file href="assets/images/f_resource.png" />
+		<file href="assets/images/f_setting.png" />
+		<file href="assets/images/f_transcript.png" />
+		<file href="assets/images/f_ui_icons.png" />
+		<file href="assets/images/f_unmute.png" />
+		<file href="assets/images/icon.png" />
+		<file href="assets/images/preload_sprites.png" />
+		<file href="css/bootstrap.css" />
+		<file href="css/colors.css" />
+		<file href="css/colors.css.map" />
+		<file href="css/colors.min.css" />
+		<file href="css/colors.scss" />
+		<file href="css/f_style.css" />
+		<file href="css/f_style.css.map" />
+		<file href="css/f_style.min.css" />
+		<file href="css/f_style.scss" />
+		<file href="css/fonts/RobotoBold.ttf" />
+		<file href="css/fonts/RobotoBold.woff" />
+		<file href="css/fonts/RobotoBoldItalic.ttf" />
+		<file href="css/fonts/RobotoBoldItalic.woff" />
+		<file href="css/fonts/RobotoItalic.ttf" />
+		<file href="css/fonts/RobotoItalic.woff" />
+		<file href="css/fonts/RobotoMedium.ttf" />
+		<file href="css/fonts/RobotoMedium.woff" />
+		<file href="css/fonts/RobotoMediumItalic.ttf" />
+		<file href="css/fonts/RobotoMediumItalic.woff" />
+		<file href="css/fonts/RobotoRegular.ttf" />
+		<file href="css/fonts/RobotoRegular.woff" />
+		<file href="css/fonts/glyphicons-halflings-regular.eot" />
+		<file href="css/fonts/glyphicons-halflings-regular.svg" />
+		<file href="css/fonts/glyphicons-halflings-regular.ttf" />
+		<file href="css/fonts/glyphicons-halflings-regular.woff" />
+		<file href="css/fonts/glyphicons-halflings-regular.woff2" />
+		<file href="css/fonts/line-awesome.eot" />
+		<file href="css/fonts/line-awesome.svg" />
+		<file href="css/fonts/line-awesome.ttf" />
+		<file href="css/fonts/line-awesome.woff" />
+		<file href="css/fonts/line-awesome.woff2" />
+		<file href="css/fonts.css" />
+		<file href="css/fonts.css.map" />
+		<file href="css/fonts.scss" />
+		<file href="css/line-awesome.css" />
+		<file href="css/media_query.css" />
+		<file href="css/media_query.css.map" />
+		<file href="css/media_query.min.css" />
+		<file href="css/media_query.scss" />
+		<file href="css/mixins.css" />
+		<file href="css/mixins.css.map" />
+		<file href="css/mixins.min.css" />
+		<file href="css/mixins.scss" />
+		<file href="css/reset.css" />
+		<file href="css/reset.css.map" />
+		<file href="css/reset.scss" />
+		<file href="css/scroll.css" />
+		<file href="css/scroll.css.map" />
+		<file href="css/scroll.min.css" />
+		<file href="css/scroll.scss" />
+		<file href="css/theme.css" />
+		<file href="css/theme.scss" />
+		<file href="css/transcript.scss" />
+		<file href="css/variables.css" />
+		<file href="css/variables.css.map" />
+		<file href="css/variables.min.css" />
+		<file href="css/variables.scss" />
+		<file href="debug.log" />
+		<file href="favicon2.ico" />
+		<file href="index.html" />
+		<file href="js/Main.js" />
+		<file href="js/controller/Contoller.js" />
+		<file href="js/json/f_cc_text.json" />
+		<file href="js/json/f_glossary_text.json" />
+		<file href="js/json/f_menu_config.json" />
+		<file href="js/json/f_preload_data.json" />
+		<file href="js/json/f_resource_text.json" />
+		<file href="js/json/f_settings.json" />
+		<file href="js/json/f_transcript_text.json" />
+		<file href="js/model/Model.js" />
+		<file href="js/services/Services.js" />
+		<file href="js/utils/AnimUtils.js" />
+		<file href="js/utils/DetectDevice.js" />
+		<file href="js/utils/Fscroll.js" />
+		<file href="js/utils/PagePreload.js" />
+		<file href="js/utils/Quiz.js" />
+		<file href="js/utils/SCORM_API_wrapper.js" />
+		<file href="js/utils/SpriteAnimation.js" />
+		<file href="js/utils/browserDetect.js" />
+		<file href="js/utils/initAudio.mp3" />
+		<file href="js/utils/initVideo.mp4" />
+		<file href="js/utils/preloader.js" />
+		<file href="js/utils/scormControl.js" />
+		<file href="js/view/GlossaryView.js" />
+		<file href="js/view/HelpView .js" />
+		<file href="js/view/MenuView.js" />
+		<file href="js/view/PlaybackView.js" />
+		<file href="js/view/ResourceView.js" />
+		<file href="libs/TweenMax.min.js" />
+		<file href="libs/bootstrap.min.js" />
+		<file href="libs/enscroll-0.6.2.min.js" />
+		<file href="libs/jquery-3.2.1.min.js" />
+		<file href="libs/jquery-ui.js" />
+		<file href="libs/jquery.ui.touch-punch.min.js" />
+		<file href="libs/jspdf.min.js" />
+		<file href="pages/assessment/audios/correct.mp3" />
+		<file href="pages/assessment/audios/incorrect.mp3" />
+		<file href="pages/assessment/audios/incorrect_second.mp3" />
+		<file href="pages/assessment/audios/main.mp3" />
+		<file href="pages/assessment/audios/main.mp3.sfk" />
+		<file href="pages/assessment/audios/partial_correct.mp3" />
+		<file href="pages/assessment/audios/question.mp3" />
+		<file href="pages/assessment/css/style.css" />
+		<file href="pages/assessment/css/style.css.map" />
+		<file href="pages/assessment/css/style.min.css" />
+		<file href="pages/assessment/css/style.scss" />
+		<file href="pages/assessment/css/theme.css" />
+		<file href="pages/assessment/css/theme.css.map" />
+		<file href="pages/assessment/css/theme.min.css" />
+		<file href="pages/assessment/css/theme.scss" />
+		<file href="pages/assessment/data/data.json" />
+		<file href="pages/assessment/debug.log" />
+		<file href="pages/assessment/images/Xmark.png" />
+		<file href="pages/assessment/images/assessment_bg.png" />
+		<file href="pages/assessment/images/assessment_bg_1.png" />
+		<file href="pages/assessment/images/assessment_bg_1_.png" />
+		<file href="pages/assessment/images/assessment_gold.png" />
+		<file href="pages/assessment/images/assessment_gold_1.png" />
+		<file href="pages/assessment/images/assessment_gold_2.png" />
+		<file href="pages/assessment/images/assessment_intro_bg.png" />
+		<file href="pages/assessment/images/assessment_retake.png" />
+		<file href="pages/assessment/images/assessment_silver.png" />
+		<file href="pages/assessment/images/assessment_win.png" />
+		<file href="pages/assessment/images/quesmark.png" />
+		<file href="pages/assessment/images/quiz_cross.png" />
+		<file href="pages/assessment/images/quiz_tick.png" />
+		<file href="pages/assessment/images/try_again.png" />
+		<file href="pages/assessment/js/script.js" />
+		<file href="pages/assessment/page.html" />
+		<file href="pages/font-scss/page_font.css" />
+		<file href="pages/font-scss/page_font.min.css" />
+		<file href="pages/font-scss/page_font.scss" />
+		<file href="pages/module_1/new_bk/page_4/audios/main.mp3" />
+		<file href="pages/module_1/new_bk/page_4/css/style.css" />
+		<file href="pages/module_1/new_bk/page_4/css/style.css.map" />
+		<file href="pages/module_1/new_bk/page_4/css/style.min.css" />
+		<file href="pages/module_1/new_bk/page_4/css/style.scss" />
+		<file href="pages/module_1/new_bk/page_4/data/data.json" />
+		<file href="pages/module_1/new_bk/page_4/images/desktop.ini" />
+		<file href="pages/module_1/new_bk/page_4/images/p5_bgimg.jpg" />
+		<file href="pages/module_1/new_bk/page_4/images/p5_portraite.jpg" />
+		<file href="pages/module_1/new_bk/page_4/js/script.js" />
+		<file href="pages/module_1/new_bk/page_4/page.html" />
+		<file href="pages/module_1/page_1/audios/page_1.mp3" />
+		<file href="pages/module_1/page_1/css/style.css" />
+		<file href="pages/module_1/page_1/css/style.css.map" />
+		<file href="pages/module_1/page_1/css/style.min.css" />
+		<file href="pages/module_1/page_1/css/style.scss" />
+		<file href="pages/module_1/page_1/data/data.json" />
+		<file href="pages/module_1/page_1/images/Thumbs.db" />
+		<file href="pages/module_1/page_1/images/icon1.png" />
+		<file href="pages/module_1/page_1/images/icon2.png" />
+		<file href="pages/module_1/page_1/images/icon3.png" />
+		<file href="pages/module_1/page_1/images/icon4.png" />
+		<file href="pages/module_1/page_1/images/icon5.png" />
+		<file href="pages/module_1/page_1/images/icon6.png" />
+		<file href="pages/module_1/page_1/images/icon7.png" />
+		<file href="pages/module_1/page_1/images/icon8.png" />
+		<file href="pages/module_1/page_1/images/p1_bgimg.jpg" />
+		<file href="pages/module_1/page_1/images/p1_portraite.jpg" />
+		<file href="pages/module_1/page_1/js/script.js" />
+		<file href="pages/module_1/page_1/page.html" />
+		<file href="pages/module_1/page_10/audios/page_10.mp3" />
+		<file href="pages/module_1/page_10/css/style.css" />
+		<file href="pages/module_1/page_10/css/style.css.map" />
+		<file href="pages/module_1/page_10/css/style.min.css" />
+		<file href="pages/module_1/page_10/css/style.scss" />
+		<file href="pages/module_1/page_10/data/data.json" />
+		<file href="pages/module_1/page_10/images/desktop.ini" />
+		<file href="pages/module_1/page_10/images/scrn_01_12_bg.jpg" />
+		<file href="pages/module_1/page_10/images/scrn_01_12_p_bg-.jpg" />
+		<file href="pages/module_1/page_10/images/scrn_01_12_p_bg.jpg" />
+		<file href="pages/module_1/page_10/js/script.js" />
+		<file href="pages/module_1/page_10/page.html" />
+		<file href="pages/module_1/page_11/audios/page_11.mp3" />
+		<file href="pages/module_1/page_11/css/style.css" />
+		<file href="pages/module_1/page_11/css/style.css.map" />
+		<file href="pages/module_1/page_11/css/style.min.css" />
+		<file href="pages/module_1/page_11/css/style.scss" />
+		<file href="pages/module_1/page_11/data/data.json" />
+		<file href="pages/module_1/page_11/images/p1_bgimg.png" />
+		<file href="pages/module_1/page_11/images/p1_portraite.png" />
+		<file href="pages/module_1/page_11/images/shadow.png" />
+		<file href="pages/module_1/page_11/js/script.js" />
+		<file href="pages/module_1/page_11/page.html" />
+		<file href="pages/module_1/page_12/audios/page_12.mp3" />
+		<file href="pages/module_1/page_12/css/style.css" />
+		<file href="pages/module_1/page_12/css/style.css.map" />
+		<file href="pages/module_1/page_12/css/style.min.css" />
+		<file href="pages/module_1/page_12/css/style.scss" />
+		<file href="pages/module_1/page_12/data/data.json" />
+		<file href="pages/module_1/page_12/images/m1_p4_bg.png" />
+		<file href="pages/module_1/page_12/images/p6_arrow.png" />
+		<file href="pages/module_1/page_12/images/p6_bgimg.png" />
+		<file href="pages/module_1/page_12/images/p6_portraite.jpg" />
+		<file href="pages/module_1/page_12/js/script.js" />
+		<file href="pages/module_1/page_12/page.html" />
+		<file href="pages/module_1/page_13/audios/page_13.mp3" />
+		<file href="pages/module_1/page_13/css/style.css" />
+		<file href="pages/module_1/page_13/css/style.css.map" />
+		<file href="pages/module_1/page_13/css/style.min.css" />
+		<file href="pages/module_1/page_13/css/style.scss" />
+		<file href="pages/module_1/page_13/data/data.json" />
+		<file href="pages/module_1/page_13/images/Thumbs.db" />
+		<file href="pages/module_1/page_13/images/congratulation_bg.jpg" />
+		<file href="pages/module_1/page_13/images/icon1.png" />
+		<file href="pages/module_1/page_13/images/icon2.png" />
+		<file href="pages/module_1/page_13/images/icon3.png" />
+		<file href="pages/module_1/page_13/images/icon4.png" />
+		<file href="pages/module_1/page_13/images/icon5.png" />
+		<file href="pages/module_1/page_13/images/icon6.png" />
+		<file href="pages/module_1/page_13/images/icon7.png" />
+		<file href="pages/module_1/page_13/images/icon8.png" />
+		<file href="pages/module_1/page_13/images/p1_bgimg.jpg" />
+		<file href="pages/module_1/page_13/images/p1_bgimg.png" />
+		<file href="pages/module_1/page_13/images/p1_portraite.jpg" />
+		<file href="pages/module_1/page_13/images/p1_portraite.png" />
+		<file href="pages/module_1/page_13/js/script.js" />
+		<file href="pages/module_1/page_13/page.html" />
+		<file href="pages/module_1/page_2/audios/page_2.mp3" />
+		<file href="pages/module_1/page_2/css/style.css" />
+		<file href="pages/module_1/page_2/css/style.css.map" />
+		<file href="pages/module_1/page_2/css/style.min.css" />
+		<file href="pages/module_1/page_2/css/style.scss" />
+		<file href="pages/module_1/page_2/data/data.json" />
+		<file href="pages/module_1/page_2/images/leviton_cover_page-01.png" />
+		<file href="pages/module_1/page_2/images/leviton_cover_page-02.png" />
+		<file href="pages/module_1/page_2/images/leviton_cover_page-03.png" />
+		<file href="pages/module_1/page_2/images/leviton_cover_page-04.png" />
+		<file href="pages/module_1/page_2/images/scrn_01_15_icon_add_plus.png" />
+		<file href="pages/module_1/page_2/js/script.js" />
+		<file href="pages/module_1/page_2/page.html" />
+		<file href="pages/module_1/page_3/audios/page_3.mp3" />
+		<file href="pages/module_1/page_3/css/style.css" />
+		<file href="pages/module_1/page_3/css/style.css.map" />
+		<file href="pages/module_1/page_3/css/style.min.css" />
+		<file href="pages/module_1/page_3/css/style.scss" />
+		<file href="pages/module_1/page_3/data/data.json" />
+		<file href="pages/module_1/page_3/images/desktop.ini" />
+		<file href="pages/module_1/page_3/images/p3_bgimg.jpg" />
+		<file href="pages/module_1/page_3/images/p3_portraite.jpg" />
+		<file href="pages/module_1/page_3/js/script.js" />
+		<file href="pages/module_1/page_3/page.html" />
+		<file href="pages/module_1/page_4/audios/page_4.mp3" />
+		<file href="pages/module_1/page_4/css/style.css" />
+		<file href="pages/module_1/page_4/css/style.css.map" />
+		<file href="pages/module_1/page_4/css/style.min.css" />
+		<file href="pages/module_1/page_4/css/style.scss" />
+		<file href="pages/module_1/page_4/data/data.json" />
+		<file href="pages/module_1/page_4/images/desktop.ini" />
+		<file href="pages/module_1/page_4/images/icons-01.png" />
+		<file href="pages/module_1/page_4/images/icons-02.png" />
+		<file href="pages/module_1/page_4/images/icons-03.png" />
+		<file href="pages/module_1/page_4/images/icons-04.png" />
+		<file href="pages/module_1/page_4/images/icons-05.png" />
+		<file href="pages/module_1/page_4/images/icons-06.png" />
+		<file href="pages/module_1/page_4/images/m3_p4_image_1.jpg" />
+		<file href="pages/module_1/page_4/js/script.js" />
+		<file href="pages/module_1/page_4/page.html" />
+		<file href="pages/module_1/page_5/audios/page_5.mp3" />
+		<file href="pages/module_1/page_5/css/style.css" />
+		<file href="pages/module_1/page_5/css/style.css.map" />
+		<file href="pages/module_1/page_5/css/style.min.css" />
+		<file href="pages/module_1/page_5/css/style.scss" />
+		<file href="pages/module_1/page_5/data/data.json" />
+		<file href="pages/module_1/page_5/images/desktop.ini" />
+		<file href="pages/module_1/page_5/images/scrn_01_11_bg.jpg" />
+		<file href="pages/module_1/page_5/images/scrn_01_11_hand_icon.png" />
+		<file href="pages/module_1/page_5/images/scrn_01_11_p_bg.jpg" />
+		<file href="pages/module_1/page_5/images/scrn_01_11_share_icon.png" />
+		<file href="pages/module_1/page_5/images/scrn_01_11_star_rating_icon.png" />
+		<file href="pages/module_1/page_5/js/script.js" />
+		<file href="pages/module_1/page_5/page.html" />
+		<file href="pages/module_1/page_6/audios/page_6.mp3" />
+		<file href="pages/module_1/page_6/css/style.css" />
+		<file href="pages/module_1/page_6/css/style.css.map" />
+		<file href="pages/module_1/page_6/css/style.min.css" />
+		<file href="pages/module_1/page_6/css/style.scss" />
+		<file href="pages/module_1/page_6/data/data.json" />
+		<file href="pages/module_1/page_6/images/Thumbs.db" />
+		<file href="pages/module_1/page_6/images/icon1.png" />
+		<file href="pages/module_1/page_6/images/icon2.png" />
+		<file href="pages/module_1/page_6/images/icon3.png" />
+		<file href="pages/module_1/page_6/images/icon4.png" />
+		<file href="pages/module_1/page_6/images/icon5.png" />
+		<file href="pages/module_1/page_6/images/icon6.png" />
+		<file href="pages/module_1/page_6/images/icon7.png" />
+		<file href="pages/module_1/page_6/images/icon8.png" />
+		<file href="pages/module_1/page_6/images/p1_bgimg.jpg" />
+		<file href="pages/module_1/page_6/images/p1_portraite.jpg" />
+		<file href="pages/module_1/page_6/js/script.js" />
+		<file href="pages/module_1/page_6/page.html" />
+		<file href="pages/module_1/page_7/audios/page_7.mp3" />
+		<file href="pages/module_1/page_7/css/style.css" />
+		<file href="pages/module_1/page_7/css/style.css.map" />
+		<file href="pages/module_1/page_7/css/style.min.css" />
+		<file href="pages/module_1/page_7/css/style.scss" />
+		<file href="pages/module_1/page_7/data/data.json" />
+		<file href="pages/module_1/page_7/images/leviton_harassment_document.jpg" />
+		<file href="pages/module_1/page_7/images/leviton_harassment_intervene.jpg" />
+		<file href="pages/module_1/page_7/images/leviton_harassment_reporting.jpg" />
+		<file href="pages/module_1/page_7/images/scrn_01_16_bg.jpg" />
+		<file href="pages/module_1/page_7/js/script.js" />
+		<file href="pages/module_1/page_7/page.html" />
+		<file href="pages/module_1/page_8/audios/page_8.mp3" />
+		<file href="pages/module_1/page_8/css/style.css" />
+		<file href="pages/module_1/page_8/css/style.css.map" />
+		<file href="pages/module_1/page_8/css/style.min.css" />
+		<file href="pages/module_1/page_8/css/style.scss" />
+		<file href="pages/module_1/page_8/data/data.json" />
+		<file href="pages/module_1/page_8/images/p1_bgimg.png" />
+		<file href="pages/module_1/page_8/images/p1_portraite.png" />
+		<file href="pages/module_1/page_8/images/shadow.png" />
+		<file href="pages/module_1/page_8/js/script.js" />
+		<file href="pages/module_1/page_8/page.html" />
+		<file href="pages/module_1/page_9/audios/page_9.mp3" />
+		<file href="pages/module_1/page_9/css/style.css" />
+		<file href="pages/module_1/page_9/css/style.css.map" />
+		<file href="pages/module_1/page_9/css/style.min.css" />
+		<file href="pages/module_1/page_9/css/style.scss" />
+		<file href="pages/module_1/page_9/data/data.json" />
+		<file href="pages/module_1/page_9/images/Thumbs.db" />
+		<file href="pages/module_1/page_9/images/icon1.png" />
+		<file href="pages/module_1/page_9/images/icon2.png" />
+		<file href="pages/module_1/page_9/images/icon3.png" />
+		<file href="pages/module_1/page_9/images/icon4.png" />
+		<file href="pages/module_1/page_9/images/icon5.png" />
+		<file href="pages/module_1/page_9/images/icon6.png" />
+		<file href="pages/module_1/page_9/images/icon7.png" />
+		<file href="pages/module_1/page_9/images/icon8.png" />
+		<file href="pages/module_1/page_9/images/p1_bgimg.jpg" />
+		<file href="pages/module_1/page_9/images/p1_portraite.jpg" />
+		<file href="pages/module_1/page_9/js/script.js" />
+		<file href="pages/module_1/page_9/page.html" />
+    </resource>
+  </resources>
+</manifest>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Leviton</title>
+    <link rel="shortcut icon" href="favicon2.ico">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/line-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="css/f_style.min.css">
+</head>
+
+<body onload="">
+    <!--initialLaunch -->
+    <!--div id="splashContainer" class="ShellOverlay"> <div class="comonTable"> <div class="comonTableCell"> <div class="Intro_button" id="initLaunchBtn"> <img src="images/shell/launch_btn.png" alt="launch"> </div> <p class="intro_txt" id="intro_txt">
+          Click the icon to launch the course. </p> </div> </div> </div-->
+    <!--//initialLaunch -->
+
+    <div id="f_wrapper">
+        <!-- preloader start -->
+        <div id="f_preloader">
+            <div id="f_loaderImage"></div>
+        </div>
+        <!-- preloader end -->
+
+        <!-- preloade image start -->
+        <div id="f_preload_main_images">
+            <img id="preload1" src="assets/images/f_bg.png" alt="preloadImage">
+            <img id="preload2" src="assets/images/f_bg_portrait.png" alt="preloadImage">
+            <img id="preload3" src="assets/images/f_cc.png" alt="preloadImage">
+            <img id="preload4" src="assets/images/f_glossary.png" alt="preloadImage">
+            <img id="preload5" src="assets/images/f_help.png" alt="preloadImage">
+            <img id="preload6" src="assets/images/f_home.png" alt="preloadImage">
+            <img id="preload7" src="assets/images/f_logo.png" alt="preloadImage">
+            <img id="preload8" src="assets/images/f_menu.png" alt="preloadImage">
+            <img id="preload9" src="assets/images/f_minus.png" alt="preloadImage">
+            <img id="preload10" src="assets/images/f_mute.png" alt="preloadImage">
+            <img id="preload11" src="assets/images/f_next.png" alt="preloadImage">
+            <img id="preload12" src="assets/images/f_pause.png" alt="preloadImage">
+            <img id="preload13" src="assets/images/f_play.png" alt="preloadImage">
+            <img id="preload14" src="assets/images/f_plus.png" alt="preloadImage">
+            <img id="preload15" src="assets/images/f_prev.png" alt="preloadImage">
+            <img id="preload16" src="assets/images/f_replay.png" alt="preloadImage">
+            <img id="preload17" src="assets/images/f_resource.png" alt="preloadImage">
+            <img id="preload18" src="assets/images/f_setting.png" alt="preloadImage">
+            <img id="preload19" src="assets/images/f_transcript.png" alt="preloadImage">
+            <img id="preload20" src="assets/images/f_setting.png" alt="preloadImage">
+            <img id="preload21" src="assets/images/f_ui_icons.png" alt="preloadImage">
+            <img id="preload22" src="assets/images/f_unmute.png" alt="preloadImage">
+            <img id="preload23" src="assets/images/preload_sprites.png" alt="preloadImage">
+        </div>
+        <!-- preloade image end -->
+
+        <!-- header start -->
+        <header id="f_header">
+            <div class="greenborder"></div>
+            <div id="f_companyLogo">
+                <img src="assets/images/f_logo.png" alt="Company Logo">
+            </div>
+            <div id="f_courseTitle">
+                <p>COURSE NAME</p>
+            </div>
+            <div id="f_pageTitle">
+                <p>Page Title</p>
+            </div>
+            <div id="f_rightMenu">
+                <div id="f_gadgetPatch"></div>
+                <div id="f_pageCounter">
+                    <p>10 / 20</p>
+                </div>
+                <div class="desk_top">
+                <button type="button" title="Help" id="f_helpBtn" class="f_navBtn"></button>
+                <button type="button" title="Home" id="f_homeBtn" class="f_navBtn"></button>
+                <button type="button" title="Menu" id="f_menuBtn" class="f_navBtn"></button></div>
+            </div>
+            <input type="text" id="dummyInput" style="color: #333333; text-align: center; position: absolute; right: 290px; width: 50px; height: 32px; top: 7px; display: none;">
+
+            <!--div id="f_pageTitle_mobile">
+                <p>Page Title</p>
+            </div-->
+        </header>
+        <!-- header end -->
+
+        <!-- setting btns -->
+        <div id="f_gadgetPopup">
+            <button type="button" id="f_menuBtn_bottom" class="f_navBtn"></button>
+            <button type="button" id="f_helpBtn_bottom" class="f_navBtn"></button>
+            <button type="button" id="f_transcriptBtn_bottom" class="f_navBtn"></button>
+
+        </div>
+
+        <!-- setting btns -->
+
+        <!-- content start -->
+        <section id="f_content">
+            <div id="f_pageLoader"></div>
+            <!-- ccText start -->
+            <div id="f_ccContainer">
+                <div id="f_ccText">
+                    <p></p>
+                </div>
+            </div>
+            <!-- ccText end -->
+
+            <!-- preloader start -->
+            <div id="f_pagePreloader">
+                <div id="f_pageLoaderImage"></div>
+            </div>
+            <!-- preloader end -->
+
+        </section>
+        <!-- content end -->
+
+        <footer id="f_footer">
+            <!-- footer start -->
+
+            <button type="button" id="f_gadgetBtn" class="f_navBtn" title="Gadget"></button>
+            <button type="button" id="f_homeBtn_bottom" class="f_navBtn" title="Home"></button>
+            <button type="button" title="transcript Button" id="f_transcriptBtn" class="f_navBtn blueColor"></button>
+            <div id="f_progressBarContainer">
+                <button type="button" title="volume Button" id="f_volumeBtn" class="f_navBtn f_unmute blueColor"></button>
+
+                <div id="f_progresBarHolder">
+                    <div id="f_scrubber">
+                        <div title="progressBar" id="f_progress"></div>
+                        <!--button type="button" id="f_knob"></button-->
+                    </div>
+					<div class="slidertimer">00:00 / 00:00</div>
+                </div>
+
+                <button type="button" title="previous Button" id="f_backBtn" class="f_navBtn blueColor"></button>
+                <button type="button" title="pause/play button" id="f_mediaBtn" class="f_navBtn f_play"></button>
+                <button type="button" title="Next Button" id="f_nextBtn" class="f_navBtn blueColor"></button>
+
+                <div id="f_nextIndicator">
+                    <p>Select Next to continue.<i class="arrow"></i>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+
+        <div id="path" style="display: none;">module/ page</div>
+
+        <!-- ipadPlayBtn start -->
+        <div id="f_ipadPlayBtnHolder">
+            <button type="button" id="f_ipadPlayBtn"></button>
+        </div>
+        <!-- ipadPlayBtn end -->
+
+        <!-- menu start -->
+        <div id="f_menuPopup">
+            <div id="f_menuContainer">
+                <div id="f_menuHeader">
+                    <div id="f_menuTitle">MENU</div>
+                    <button type="button" id="f_menuClose" class="la-times"></button>
+                </div>
+                <div id="f_menuContent"></div>
+            </div>
+        </div>
+        <!-- menu end -->
+
+        <!-- transcript start <div id="f_transcriptPopup">-->
+        <div id="f_transcriptContainer">
+            <div id="f_transHeader">
+                <p id="f_transTitle">TRANSCRIPT</p>
+                <button type="button" id="f_transClose" class="la-times"></button>
+            </div>
+            <div class="clearFix"></div>
+            <div id="f_transContent">
+                <div id="f_transText"></div>
+            </div>
+        </div>
+        <!--</div> transcript end -->
+
+        <!-- resources start -->
+        <div id="f_resourcePopup">
+            <div id="f_resourceContainer">
+                <div id="f_resourceHeader">
+                    <div id="f_resourceTitle">RESOURCES</div>
+                    <button type="button" id="f_resourceClose" class="la-times"></button>
+                </div>
+                <div class="clearFix"></div>
+                <div id="f_resourceContent">
+                    <div class="f_resourceRow">
+                        <div class="f_resourceColumn1">
+                            <p>
+                                <a href="https://www.gpo.gov/fdsys/pkg/FR-2017-01-18/pdf/2017-00719.pdf" target="_blank">42 CFR Part 2</a>
+                            </p>
+                        </div>
+                        <div class="f_resourceColumn2">
+                            <p>A federal law regulating the sharing of information about substance use disorders such as alcohol and drug addictions.</p>
+                        </div>
+                    </div>
+
+                    <div class="f_resourceRow">
+                        <div class="f_resourceColumn1">
+                            <p>
+                                <a href="https://www.gpo.gov/fdsys/pkg/FR-2017-01-18/pdf/2017-00719.pdf" target="_blank">42 CFR Part 2</a>
+                            </p>
+                        </div>
+                        <div class="f_resourceColumn2">
+                            <p>A federal law regulating the sharing of information about substance use disorders such as alcohol and drug addictions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- resource end -->
+
+        <!-- glossary start -->
+        <!--div id="f_glossaryPopup">
+            <div id="f_glossaryContainer">
+                <div id="f_glossaryHeader">
+                    <div id="f_glossaryTitle">GLOSSARY</div>
+                    <button type="button" id="f_glossaryClose" class="la-times"></button>
+                </div>
+                <div class="clearFix"></div>
+                <div id="f_glossaryContent">
+                    <div id="f_glossaryCol1"></div>
+                    <div id="f_glossaryCol2"></div>
+                    <div id="f_glossaryCol3">
+                        <div id="f_g_heading"></div>
+                        <div id="f_g_description"></div>
+                    </div>
+                </div>
+            </div>
+        </div-->
+
+        <!-- glossary end -->
+
+        <!--f_help btn start-->
+        <div id="f_helpPopup">
+            <div id="f_helpContainer">
+                <div id="f_helpHeader">
+                    <div id="f_helpTitle">Help</div>
+                    <button type="button" id="f_helpClose" class="la-times"></button>
+                </div>
+                <div class="clearFix"></div>
+                <div id="f_helpContent">
+                    <!--div class="left_ost"><p></p></div>
+                           <div class="center_ost"><p></p></div>
+                           <div class="right_ost"><p></p></div-->
+                    <div id="top_possition">
+                        <div class="h_help"><p>Help button shows you how to navigate this module.</p></p><img src="assets/images/f_help.png" alt=" Navigation"></div>
+                        <div class="h_menu"><p>The Menu shows all the available chapters in the course.</p><img src="assets/images/f_menu.png" alt=" Navigation" ></div>
+                        <div class="h_nextprvious"><p>Use the forward and backward arrows to go to next or previous pages.</p><img src="assets/images/nextfprev.png" alt=" Navigation" ></div>
+                        <div class="h_playpaush"><p>The Play/Replay/Pause button gives you option to control the timeline.</p><img src="assets/images/playpausereplay.png" alt=" Navigation" ></div>
+
+                    <!--div class="navigation_img"><img src="assets/images/icon.png" alt=" Navigation" style="width:100%"></div-->
+
+                        <div class="h_home"><p>The Home button leads you back to the course’s opening page.</p><img src="assets/images/f_home.png" alt=" Navigation" ></div>
+                        <div class="h_trnascript"><p>The transcript button will provide you with audio script.</p><img src="assets/images/f_transcript.png" alt=" Navigation" ></div>
+                        <div class="h_slider"> <p>The slider bar allows you to move forward or backward within the slide.</p><img src="assets/images/slider.png" alt=" Navigation" ></div>
+                        <div class="h_muteaUnmute"><p>The audio button gives you option to turn the audio on or off.</p><img src="assets/images/f_mutef_unmute.png" alt=" Navigation" ></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--f_help End start-->
+        <div id="f_dummyVideoHolder">
+            <video id="courseVideo"></video>
+            <div class="dummyDiv"></div>
+        </div>
+
+        <div id="f_orientationInfo">
+            <img src="assets/images/f_orientation_info.png" alt="f_orientation_info">
+        </div>
+
+        <div id="resumeBlock">
+            <div id="resumePopup">
+                <div class="topPatch"></div>
+                <p>Would you like to resume your course where you left off?</p>
+                <button type="button" id="restart_button">No</button>
+                <button type="button" id="resume_button">Yes</button>
+            </div>
+        </div>
+    </div>
+    <!-- wrapper end -->
+    <audio id="courseAudio"></audio>
+
+    <!-- js file -->
+    <script type="text/javascript" src="libs/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="libs/jquery-ui.js"></script>
+    <script type="text/javascript" src="libs/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="libs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="libs/TweenMax.min.js"></script>
+    <script type="text/javascript" src="libs/enscroll-0.6.2.min.js"></script>
+    <script type="text/javascript" src="libs/jspdf.min.js"></script>
+    <script type="text/javascript" src="js/utils/preloader.js"></script>
+    <script type="text/javascript" src="js/utils/AnimUtils.js"></script>
+    <script type="text/javascript" src="js/utils/SpriteAnimation.js"></script>
+    <script type="text/javascript" src="js/utils/SCORM_API_wrapper.js"></script>
+
+    <script type="text/javascript" src="js/services/Services.js"></script>
+    <script type="text/javascript" src="js/model/Model.js"></script>
+    <script type="text/javascript" src="js/controller/Contoller.js"></script>
+    <script type="text/javascript" src="js/view/MenuView.js"></script>
+    <script type="text/javascript" src="js/view/PlaybackView.js"></script>
+    <script type="text/javascript" src="js/view/GlossaryView.js"></script>
+    <script type="text/javascript" src="js/view/ResourceView.js"></script>
+    <script type="text/javascript" src="js/utils/PagePreload.js"></script>
+    <script type="text/javascript" src="js/utils/DetectDevice.js"></script>
+    <script type="text/javascript" src="js/utils/scormControl.js"></script>
+    <script type="text/javascript" src="js/utils/Fscroll.js"></script>
+    <script>
+        //$("#back_btn").attr('title','');
+        $('#next_btn').tooltip();
+        $('#back_btn').tooltip();
+        var glower = $('#next_btn');
+        var setinterval = window.setInterval(function() {
+            glower.toggleClass('active');
+        }, 600);
+        var isScorm = false;
+        pipwerks.SCORM.version = "1.2";
+        isScorm = pipwerks.SCORM.init();
+    </script>
+    <script type="text/javascript" src="js/Main.js"></script>
+
+</body>
+
+</html>
