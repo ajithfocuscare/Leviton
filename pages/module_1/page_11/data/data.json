@@ -1,0 +1,138 @@
+{
+  "audioSRC": "pages/module_1/page_11/audios/main.mp3",
+
+  "imgCollage": {
+    "desktop": [{
+      "imageSRC": "pages/module_1/page_11/images/p1_bgimg.png",
+      "altText": "Cake Image"
+    }],
+    "portrait": [{
+      "imageSRC": "pages/module_1/page_11/images/p1_portraite.png",
+      "altText": "Cake Image"
+    }]
+  },
+
+  "title": "Harassment-Free Workplace",
+  "questionText": "1. For harassment to be quid pro quo sexual harassment, it must occur between co-workers(peers) ",
+  "instructionText": ["Instruction", "Choose the correct option and submit your choice by clicking “Done”."],
+  "optionText": [
+    "True",
+    "False"
+  ],
+  "questionText1": "2. A manager asking a subordinate out on a date is an example of quid pro quo sexual harassment  ",
+  "instructionText1": ["Instruction", "Choose the correct option and submit your choice by clicking “Done”."],
+  "optionText1": [
+    "True",
+    "False"
+  ],
+  "submitText": ["Submit", "Try again"],
+  "feedbackText1": {
+    "correct": "Correct answer!",
+    "firstIncorrect": "<b>Incorrect:</b></br>Quid pro quo sexual harassment refers to a person in a position of authority threatening or imposing an employment action based on the applicant's willingness or unwillingness to participate in a personal or sexual relationship.",
+    "icorrect": ""
+  },
+  "feedbackText2": {
+    "correct": "Correct answer!",
+    "firstIncorrect": "<b>Incorrect:</b></br>This is only an example of Quid Pro Quo if the manager requires the employee to agree to the date as a condition of obtaining or keeping a job or job benefit such as a raise or promotion.",
+    "icorrect": ""
+  },
+  "correctAnswer": [1, 1],
+  "noOfAttempts": 2,
+  "ccText": [
+    [{
+        "text": "How many employees were hired in our company last year?",
+        "startTime": 0,
+        "endTime": 4.6
+      },
+      {
+        "text": "Choose the correct options and submit your choice by clicking “Done”.",
+        "startTime": 4.8,
+        "endTime": 8.2
+      },
+      {
+        "text": "Last year we hired more than one hundred, but less than five hundred new employees.",
+        "startTime": 8.5,
+        "endTime": 13.8
+      },
+      {
+        "text": "Last year we hired more than fifty, but less than one hundred new employees.",
+        "startTime": 14,
+        "endTime": 19.3
+      },
+      {
+        "text": "Last year we hired more than five hundred new employees.",
+        "startTime": 19.5,
+        "endTime": 23.3
+      },
+      {
+        "text": "Above all.",
+        "startTime": 23.5,
+        "endTime": 25.4
+      }
+    ],
+    [{
+      "text": "Correct answer!",
+      "startTime": 0,
+      "endTime": 25
+    }],
+    [{
+      "text": "Partial correct. Please Try again.",
+      "startTime": 0,
+      "endTime": 25
+    }],
+    [{
+      "text": "Incorrect answer. Please Try again.",
+      "startTime": 0,
+      "endTime": 25
+    }],
+    [{
+      "text": "Incorrect answer. The correct answer is ",
+      "startTime": 0,
+      "endTime": 25
+    }]
+  ],
+
+
+
+  "transcriptText": [
+    [
+      "<i><b>Hello</b></i>, and welcome to the Privacy Overview module. When it comes to patient information it is especially important that we understand the regulations and guidelines so we can protect patient privacy.",
+      "Explain the need for standardization in the secure chip industry. Describe how GlobalPlatform provides solutions to facilitate secure chip acceptance.",
+      ["Build a root of trust using a GlobalPlatform device.", "Choose the best management model according to your ecosystem."]
+    ]
+  ],
+
+  "ccText": [
+    [{
+        "text": "Hello, and welcome to the Privacy Overview module.",
+        "startTime": 0,
+        "endTime": 6.2
+      },
+      {
+        "text": "When it comes to patient information it is especially important that we understand the regulations and guidelines so we can protect patient privacy.",
+        "startTime": 6.4,
+        "endTime": 15.9
+      },
+      {
+        "text": "Explain the need for standardization in the secure chip industry.",
+        "startTime": 16.1,
+        "endTime": 21
+      },
+      {
+        "text": "Describe how GlobalPlatform provides solutions to facilitate secure chip acceptance.",
+        "startTime": 21.2,
+        "endTime": 27.3
+      },
+      {
+        "text": "Build a root of trust using a GlobalPlatform device.",
+        "startTime": 27.5,
+        "endTime": 31.3
+      },
+      {
+        "text": "Choose the best management model according to your ecosystem.",
+        "startTime": 31.5,
+        "endTime": 35.5
+      }
+    ]
+  ]
+}

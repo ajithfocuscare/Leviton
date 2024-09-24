@@ -1,0 +1,54 @@
+{
+    "audioSRC": "pages/module_1/page_13/audios/main.mp3",
+
+    "imgCollage": {
+            "desktop": [{
+                "imageSRC": "pages/module_1/page_13/images/p4_bgimg.png",
+                "altText": "Cake Image"
+            }],
+            "portrait": [{
+                "imageSRC": "pages/module_1/page_13/images/p4_portraite.png",
+                "altText": "Cake Image"
+            }]
+        },
+    "dimanImg": {
+        "imageSRC": "pages/module_1/page_13/images/p4_img1.jpg",
+        "altText": "Cake Image"
+    },
+
+    "title": "Quid Pro Quo Sexual Harassment",
+
+
+    "content": {
+        "paraText": ["Quid pro quo (Latin for “this for that”) harassment occurs when a person in a position of authority, usually a supervisor or manager, requires employees to tolerate inappropriate behavior that is sexual in nature as a condition of obtaining or keeping a job or a job benefit, including raises and promotions"],
+        "list": []
+    },
+
+    "leftContent": {
+        "paraText": ["Some examples of quid pro quo harassment are: "],
+        "list": []
+    },
+
+    "rightContent": {
+      "paraText": ["Manager to Subordinate"],
+        "list": ["“You can have that promotion if you accompany me to dinner”", "“To get ahead in this company you should wear more revealing clothes”", "“If you don’t kiss me, you will never get promoted”"]
+
+    },
+
+    "transcriptText": [
+        [
+            "First, let’s talk about Quid pro quo. The Quid pro quo (Latin for “this for that”) harassment occurs when a person in a position of authority, usually a supervisor or manager, requires employees to tolerate inappropriate behavior that is sexual in nature as a condition of obtaining or keeping a job or a job benefit, including raises or promotions.</br></br>Here are some examples of quid pro quo harassment listed below"
+        ]
+    ],
+
+    "ccText": [
+        [
+            { "text": "Hello, and welcome to the Privacy Overview module.", "startTime": 0, "endTime": 6.2 },
+            { "text": "When it comes to patient information it is especially important that we understand the regulations and guidelines so we can protect patient privacy.", "startTime": 6.4, "endTime": 15.9 },
+            { "text": "Explain the need for standardization in the secure chip industry.", "startTime": 16.1, "endTime": 21 },
+            { "text": "Describe how GlobalPlatform provides solutions to facilitate secure chip acceptance.", "startTime": 21.2, "endTime": 27.3 },
+            { "text": "Build a root of trust using a GlobalPlatform device.", "startTime": 27.5, "endTime": 31.3 },
+            { "text": "Choose the best management model according to your ecosystem.", "startTime": 31.5, "endTime": 35.5 }
+        ]
+    ]
+}

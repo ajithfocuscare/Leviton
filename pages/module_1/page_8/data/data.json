@@ -1,0 +1,52 @@
+{
+    "audioSRC": "pages/module_1/page_8/audios/main.mp3",
+
+    "imgCollage": {
+            "desktop": [{
+                "imageSRC": "pages/module_1/page_8/images/p1_bgimg.png",
+                "altText": "Cake Image"
+            }],
+            "portrait": [{
+                "imageSRC": "pages/module_1/page_8/images/p1_portraite.png",
+                "altText": "Cake Image"
+            }]
+        },
+        "mainost": {
+            "paraText": ["Workplace harassment is unwelcome or unwanted behavior that unreasonably interferes with an employee’s work performance or creates a hostile work environment and is based on one of the following legally protected characteristics:"],
+            "list": []
+        },
+
+    "title": "Workplace Harassment",
+    "leftContent": {
+        "paraText": [""],
+        "list": ["Race","Color","Religion","National Origin","Citizenship","Criminal", "History","Engaging in protected activity"]
+    },
+    "centerContent": {
+            "paraText": [""],
+              "list": ["Age (40 or older)","Gender","Gender Identity","Disability","Genetic Information"]
+
+    },
+    "rightContent": {
+      "paraText": [""],
+  "list": ["Sexual Orientation","Marital Status","Military/Veteran Status","Pregnancy","Status as victim of domestic violence"]
+
+    },
+
+
+    "transcriptText": [
+        [
+          "<p>Harassment is not simple to define. As society changes and new laws are created, the definition of harassment changes. For example, there are now “cyber-stalking” and “cyber-bullying” laws on the books.</p><p>According to the federal government, workplace harassment is defined as unwelcome or unwanted behavior that unreasonably interferes with an employee's work performance or creates a hostile work environment <strong>and </strong>is based on one of the following legally protected characteristics that you see listed here.</p>  <p>The legally protected characteristics can be actual- when someone is treated unfavorably due to their race, religion, sexual orientation etc. or perceived - when someone is treated unfavorably because others believe they are part of a protected class even though in reality they aren&rsquo;t. For example:&nbsp; If an employee is rejected for a promotion to a supermarket buying team that sources wine because he has an Arabic name and the employer assumed he is Muslim and won&rsquo;t want to deal with Alcohol.&nbsp; The employer perceived him to be of a certain religion and discriminated against him.&nbsp;</p> <p>Harassment conduct is unlawful when it is so severe or persistent that it creates a hostile or offensive work environment <u>or</u> when it is the basis for a negative employment action such as (termination, suspension, failure to promote or hire, demotion etc.)</p>"
+        ]
+    ],
+
+    "ccText": [
+        [
+            { "text": "Hello, and welcome to the Privacy Overview module.", "startTime": 0, "endTime": 6.2 },
+            { "text": "When it comes to patient information it is especially important that we understand the regulations and guidelines so we can protect patient privacy.", "startTime": 6.4, "endTime": 15.9 },
+            { "text": "Explain the need for standardization in the secure chip industry.", "startTime": 16.1, "endTime": 21 },
+            { "text": "Describe how GlobalPlatform provides solutions to facilitate secure chip acceptance.", "startTime": 21.2, "endTime": 27.3 },
+            { "text": "Build a root of trust using a GlobalPlatform device.", "startTime": 27.5, "endTime": 31.3 },
+            { "text": "Choose the best management model according to your ecosystem.", "startTime": 31.5, "endTime": 35.5 }
+        ]
+    ]
+}

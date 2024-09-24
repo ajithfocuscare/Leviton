@@ -1,0 +1,49 @@
+{
+    "audioSRC": "pages/module_1/page_12/audios/sound_0.mp3",
+
+    "imgCollage": {
+            "desktop": [{
+                "imageSRC": "pages/module_1/page_12/images/p3_bgimg.png",
+                "altText": "Cake Image"
+            }],
+            "portrait": [{
+                "imageSRC": "pages/module_1/page_12/images/p3_portraite.png",
+                "altText": "Cake Image"
+            }]
+        },
+
+    "iconimgbig": {
+        "imageSRC": "pages/module_1/page_12/images/buble2.png",
+        "altText": "Cake Image"
+
+    },
+
+    "title": "Sexual Harassment",
+
+
+    "leftContent": {
+        "paraText": ["The Equal Employment Opportunity Commission (EEOC) defines sexual harassment as unwelcome sexual advances, request for sexual favors and other verbal or physical harassment of a sexual nature when:"],
+            "list": ["Submission to that conduct or those advances or requests is made either explicitly or implicitly a term or condition of an individual's employment; or","Submission to or rejection of the conduct or advances or requests by an individual is used as the basis for employment decisions affecting the individual; or","The conduct or advances or requests have the purpose or effect of unreasonably interfering with an individual’s work performance or creating an intimidating, hostile, or offensive working environment, even if the individual is not the intended target","Offensive remarks about ones gender can be sexual harassment","Sexual harassment can be male to female, female to male or same sex","Simple teasing, offhand comments or isolated incidents that are not very serious are not necessarily unlawful, but are never the less unacceptable. Conduct must be so frequent or severe that it creates a hostile or offensive work environment or results in a negative employment action.","There are two forms of sexual harassment: <u>Quid Pro Quo</u> and <u>Sexually Hostile Environment</u>"]
+
+
+    },
+
+
+
+    "transcriptText": [
+        [
+            "The Equal Employment Opportunity Commission (EEOC) defines sexual harassment as unwelcome sexual advances, request for sexual favors and other verbal or physical harassment of a sexual nature when:","Submission to that conduct or those advances or requests is made either explicitly or implicitly a term or condition of an individual's employment; or","Submission to or rejection of the conduct or advances or requests by an individual is used as the basis for employment decisions affecting the individual; or","The conduct or advances or requests have the purpose or effect of unreasonably interfering with an individual’s work performance or creating an intimidating, hostile, or offensive working environment, even if the individual is not the intended target.","Offensive remarks about ones gender can be sexual harassment.","Sexual harassment can be male to female, female to male or same sex","Although simple teasing, offend comments or isolated incidents that are not very serious in nature may not be considered unlawful, they are never the less unacceptable.  Conduct must be so frequent or severe that it creates a hostile or offensive work environment or results in a negative employment action to rise to the level of being unlawful.","There are two forms of sexual harassment: <u>Quid Pro Quo and Sexually Hostile Environment</u>"
+        ]
+    ],
+
+    "ccText": [
+        [
+            { "text": "Hello, and welcome to the Privacy Overview module.", "startTime": 0, "endTime": 6.2 },
+            { "text": "When it comes to patient information it is especially important that we understand the regulations and guidelines so we can protect patient privacy.", "startTime": 6.4, "endTime": 15.9 },
+            { "text": "Explain the need for standardization in the secure chip industry.", "startTime": 16.1, "endTime": 21 },
+            { "text": "Describe how GlobalPlatform provides solutions to facilitate secure chip acceptance.", "startTime": 21.2, "endTime": 27.3 },
+            { "text": "Build a root of trust using a GlobalPlatform device.", "startTime": 27.5, "endTime": 31.3 },
+            { "text": "Choose the best management model according to your ecosystem.", "startTime": 31.5, "endTime": 35.5 }
+        ]
+    ]
+}

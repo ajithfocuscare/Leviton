@@ -1,0 +1,51 @@
+{
+    "audioSRC": "pages/module_1/page_10/audios/main.mp3",
+
+"title": "Hostile Work Environment",
+    "imgCollage": {
+                "desktop": [{
+                  "imageSRC": "pages/module_1/page_10/images/p1_bgimg.png",
+                  "altText": "rating star Image"
+                }],
+                "portrait": [{
+                  "imageSRC": "pages/module_1/page_10/images/p1_portraite.png",
+                  "altText": "rating star Image"
+                }]
+  },
+
+  "example_icon": {
+      "imageSRC": "pages/module_1/page_10/images/icon1.png",
+      "altText": " lighting icon"
+  },
+
+  "note_icon": {
+      "imageSRC": "pages/module_1/page_10/images/icon2.png",
+      "altText": "pin point icon"
+  },
+
+
+
+    "content":    ["A hostile work environment is a workplace in which unwelcome comments or behaviors, based on any of the previously discussed, legally protected characteristics, creates an uncomfortable work environment including: "],
+    "content_0":  ["In addition to the person(s) being directly harassed, employee(s) that hear or view the conduct could be victims as well"],
+    "example": [],
+    "example_text" : ["Verbal Harassment"],
+    "note": [],
+    "note_text": ["Physical and Visual Harassment"],
+
+    "transcriptText": [
+        [
+            "A hostile work environment is a form of workplace harassment. It is any words or conduct, based on any of the previously discussed legally protected characteristics, that unreasonably interferes with someone's work performance or creates an intimidating, hostile, or offensive working environment. </br></br>Some examples of verbal harassment are: unwelcome comments, jokes, threats, insults, name calling, negative stereotyping, and/or words that belittle, intimidate or single out a person due to legally protected characteristics.</br></br>Some examples of physical and visual harassment are: unwelcome physical contact or invading one's space, offensive gestures, possession or display of derogatory pictures or graphic material, and/or inappropriate staring.</br></br>In addition to the person or people being directly harassed, employees that hear or view the conduct could be victims as well."
+        ]
+    ],
+
+    "ccText": [
+        [
+            { "text": "Hello, and welcome to the Privacy Overview module.", "startTime": 0, "endTime": 6.2 },
+            { "text": "When it comes to patient information it is especially important that we understand the regulations and guidelines so we can protect patient privacy.", "startTime": 6.4, "endTime": 15.9 },
+            { "text": "Explain the need for standardization in the secure chip industry.", "startTime": 16.1, "endTime": 21 },
+            { "text": "Describe how GlobalPlatform provides solutions to facilitate secure chip acceptance.", "startTime": 21.2, "endTime": 27.3 },
+            { "text": "Build a root of trust using a GlobalPlatform device.", "startTime": 27.5, "endTime": 31.3 },
+            { "text": "Choose the best management model according to your ecosystem.", "startTime": 31.5, "endTime": 35.5 }
+        ]
+    ]
+}
