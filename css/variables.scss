@@ -1,0 +1,125 @@
+@import "colors.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+
+//----- fonts -----
+$regular: "RobotoRegular";
+$regular-italic: "RobotoItalic";
+$bold: "RobotoBold";
+$bold-italic: "RobotoBoldItalic";
+$medium: "RobotoMedium";
+$medium-italic: "RobotoMediumItalic";
+$bold: "RobotoBold";
+$bold-italic: "RobotoBoldItalic";
+$icon-font: "LineAwesome";
+
+//----- wrapper -----
+$body-bgcolor: #21252b;
+$wrapper-width: 1024px;
+$wrapper-height: 672px;
+$wrapper-bgcolor: $primary-color;
+
+//----- preloader -----
+$preload-bgcolor: $primary-color;
+$preload-img-w: 64px;
+$preload-img-h: 64px;
+
+//----- header -----
+$header-width: 100%;
+$header-height: 55px;
+
+$course-title-text-color: $dark-bg-color;
+$title-text-color: $dark-bg-color;
+
+//----- content -----
+$content-width: 100%;
+$content-height: 100%;
+
+//----- fo0ter -----
+$footer-width: 510px;
+$footer-height: 40px;
+$footer-bgcolor: $secondary-color;
+$footer-nav-color1: $primary-color;
+$footer-nav-color2: $secondary-color;
+$footer-tablet-width: 410px;
+$footer-mobile-width: 320px;
+
+//----- popup style -----
+$popup-container-w: 100%;
+$popup-container-h: 100%;
+$popup-title-text-size: 16px;
+$popup-title-text-font: $bold;
+
+//----- scroll style -----
+$scrollbar-track-w: 1px;
+$scrollbar-track-margin: 0;
+$scrollbar-handle-w: 4px;
+$scrollbar-handle-margin: 0 0 0 -3px;
+
+//----- transcript style -----
+$transcript-box-w: 350px;
+$transcript-box-mobile-w: 250px;
+$transcript-box-h: 160px;
+$transcript-bgcolor: $popup-bg-color;
+$transcript-header-w: 100%;
+$transcript-header-h: 30px;
+$transcript-closebtn-w: $transcript-header-h;
+$transcript-closebtn-h: $transcript-header-h;
+$transcript-content-w: $transcript-header-w - 16;
+$transcript-content-h: $transcript-box-h - ($transcript-header-h + 16);
+$transcript-content-bgcolor: $popup-bg-color;
+
+//----- menu style -----
+$menu-box-w: 700px;
+$menu-box-h: 400px;
+$menu-bgcolor: $popup-bg-color;
+$menu-header-w: 100%;
+$menu-header-h: 40px;
+$menu-closebtn-w: $menu-header-h;
+$menu-closebtn-h: $menu-header-h;
+$menu-content-w: 100%;
+$menu-content-h: $menu-box-h - $menu-header-h;
+$menu-content-bgcolor: $popup-bg-color;
+
+$menu-level-1-width: $menu-box-w;
+$menu-level-1-height: 40px;
+$menu-level-2-width: $menu-level-1-width - 15;
+$menu-level-2-height: 40px;
+$menu-level-2-left: 15px;
+$menu-level-3-width: $menu-level-2-width - 15;
+$menu-level-3-height: 40px;
+$menu-level-3-left: 30px;
+
+//----- resources style -----
+$resources-box-w: 700px;
+$resources-box-h: 400px;
+$resources-bgcolor: $popup-bg-color;
+$resources-header-w: 100%;
+$resources-header-h: 40px;
+$resources-closebtn-w: $resources-header-h;
+$resources-closebtn-h: $resources-header-h;
+$resources-content-w: 100%;
+$resources-content-h: $resources-box-h - $resources-header-h;
+$resources-content-bgcolor: $popup-bg-color;
+
+//----- glossary style -----
+$glossary-box-w: 700px;
+$glossary-box-h: 400px;
+$glossary-bgcolor: $popup-bg-color;
+$glossary-header-w: 100%;
+$glossary-header-h: 40px;
+$glossary-closebtn-w: $glossary-header-h;
+$glossary-closebtn-h: $glossary-header-h;
+$glossary-content-w: 100%;
+$glossary-content-h: $glossary-box-h - $glossary-header-h;
+
+$glossary-col-1-width: 40px;
+$glossary-col-1-height: $glossary-content-h;
+$glossary-col-1-bgcolor: $glossary-alphabet-normal;
+$glossary-col-2-width: 220px;
+$glossary-col-2-height: $glossary-content-h;
+$glossary-col-3-width: $glossary-box-w - ($glossary-col-1-width + $glossary-col-2-width);
+$glossary-col-3-height: $glossary-content-h;
+
+//----- CC style -----
+$cc-font-size: 14px;

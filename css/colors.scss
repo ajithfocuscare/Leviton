@@ -1,0 +1,78 @@
+$primary-color: rgba(40, 127, 184, 1);
+$secondary-color: rgba(8, 67, 105, 1);
+$highlight-color: rgba(236, 217, 53, 1);
+$dark-bg-color: rgb(255, 255, 255);
+$navbtn-over-color: $dark-bg-color;
+
+//---- header -----
+
+$header-bgcolor: rgba(1, 58, 129, 0.8);
+$logo-bgcolor: rgba(255, 255, 255, 0);
+$title-bgcolor: rgba(255, 255, 255, 0.5);
+
+//---- content -----
+$content-bgcolor: rgba(255, 255, 255, 1);
+
+//---- popup -----
+$popup-overlay-color: rgba(0, 0, 0, 0.6);
+$popup-title-bg-color: rgba(255, 255, 255, 1);
+$popup-title-text-color: $dark-bg-color;
+$popup-bg-color: rgba(65, 68, 71, 1);
+$popup-scrollbar-trackcolor: rgba(46, 51, 58, 1);
+$popup-scrollbar-handlecolor: rgba(255, 153, 1, 1);
+
+//---- cc text ----
+$cc-bg-color: rgba(0, 0, 0, 0.8);
+
+//---- transcript ----
+$transcript-text-color: rgba(255, 255, 255, 1);
+
+//---- menu ----
+$menu-level-1-bgcolor: $primary-color;
+$menu-level-2-bgcolor: rgba(64, 68, 71, 1);
+$menu-level-3-bgcolor: rgba(87, 90, 93, 1);
+$menu-level-1-bordercolor: rgba(20, 105, 161, 1);
+$menu-level-2-bordercolor: rgba(96, 98, 101, 1);
+$menu-level-3-bordercolor: rgba(111, 113, 115, 1);
+$accord-container_bgcolor: #1e252b;
+$menu-notstarted-color: rgba(255, 255, 255, 1);
+$menu-inprogress-color: rgba(252, 148, 13, 1);
+$menu-completed-color: rgba(44, 150, 2, 1);
+$menu-notstarted-textcolor: $menu-notstarted-color;
+$menu-inprogress-textcolor: $menu-inprogress-color;
+$menu-completed-textcolor: $menu-notstarted-color;
+$menu-text-color: rgba(255, 255, 255, 1);
+
+//---- glossary -----
+$glossary-content-bgcolor: $popup-bg-color;
+$glossary-text-color: rgba(255, 255, 255, 1);
+$glossary-alphabet-normal: $primary-color;
+$glossary-alphabet-active: $secondary-color;
+$glossary-alphabet-deactive: rgba(107, 107, 107, 1);
+$glossary-alphabet-normalborder: rgba(20, 105, 161, 1);
+$glossary-alphabet-activeborder: rgba(34, 69, 95, 1);
+$glossary-alphabet-deactiveborder: rgba(107, 107, 107, 1);
+$glossary-alphabet-normaltext: rgba(255, 255, 255, 1);
+$glossary-alphabet-activetext: rgba(255, 255, 255, 1);
+$glossary-alphabet-deactivetext: rgba(136, 136, 136, 1);
+$glossary-keyword-normal: rgba(3, 34, 56, 1);
+$glossary-keyword-active: $secondary-color;
+$glossary-keyword-deactive: rgba(107, 107, 107, 1);
+$glossary-keyword-normalborder: rgba(20, 105, 161, 1);
+$glossary-keyword-activeborder: rgba(34, 69, 95, 1);
+$glossary-keyword-deactiveborder: rgba(107, 107, 107, 1);
+$glossary-keyword-normaltext: rgba(255, 255, 255, 1);
+$glossary-keyword-activetext: rgba(255, 255, 255, 1);
+$glossary-keyword-deactivetext: rgba(136, 136, 136, 1);
+$glossary-definition-bgcolor: rgba(47, 59, 68, 1);
+
+//---- resources ----
+$resource-bgcolor: rgba(52, 61, 74, 1);
+$resource-bordercolor: rgba(42, 50, 61, 1);
+$resource-link-color: rgba(223, 199, 49, 1);
+$resource-definition-color: rgba(255, 255, 255, 1);
+$resource-split-color: rgba(255, 255, 255, 0.2);
+$resources-text-color: rgba(255, 255, 255, 1);
+
+//---- next glow -----
+$next-glow-color: rgba(60, 118, 61, 1);

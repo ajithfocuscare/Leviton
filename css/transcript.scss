@@ -1,0 +1,118 @@
+$transcript-box-w: 350px;
+$transcript-box-mobile-w: 250px;
+$transcript-box-h: 160px;
+$transcript-bgcolor: $popup-bg-color;
+$transcript-header-w: 100%;
+$transcript-header-h: 30px;
+$transcript-closebtn-w: $transcript-header-h;
+$transcript-closebtn-h: $transcript-header-h;
+$transcript-content-w: $transcript-header-w - 16;
+$transcript-content-h: $transcript-box-h - ($transcript-header-h + 16);
+$transcript-content-bgcolor: $popup-bg-color;
+$transcript-text-color: $white;
+// ------- Transcript container -------
+#f_transcriptContainer {
+    position: absolute;
+    z-index: 9940;
+    top: 180px;
+    left: 20px;
+    display: none;
+    overflow: hidden;
+    width: $transcript-box-w;
+    height: $transcript-box-h;
+    border: 1px solid $transcript-bgcolor;
+    background-color: $transcript-bgcolor;
+    @include mobile-portrait {
+        width: $transcript-box-mobile-w;
+    }
+    #f_transHeader {
+        position: relative;
+        float: left;
+        width: $transcript-header-w;
+        height: $transcript-header-h;
+        margin: 0;
+        cursor: move;
+        background-color: $popup-title-bg-color;
+        #f_transTitle {
+            font-family: $popup-title-text-font;
+            font-size: $popup-title-text-size;
+            line-height: $transcript-header-h;
+            float: left;
+            width: auto;
+            height: auto;
+            margin-left: 10px;
+            cursor: move;
+            color: $popup-title-text-color;
+            @extend .displayTableCell;
+        }
+        #f_transClose {
+            font-family: $icon-font;
+            font-size: 24px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: $transcript-closebtn-w;
+            height: $transcript-closebtn-h;
+            cursor: pointer;
+            color: #fff;
+            border: none;
+            border-left: 1px solid $popup-close-btn-bg;
+            background-color: $popup-close-btn-bg;
+        }
+    }
+    #f_transContent {
+        position: relative;
+        top: 8px;
+        left: 8px;
+        overflow: hidden;
+        width: 96% !important;
+        height: $transcript-content-h;
+        background-color: $transcript-content-bgcolor;
+        @include mobile-portrait {
+            width: 94% !important;
+        }
+        #f_transText {
+            font-family: $regular;
+            font-size: 14px;
+            line-height: 18px;
+            float: left;
+            width: 97%;
+            height: auto;
+            margin: 0;
+            text-align: left;
+            color: $transcript-text-color;
+            p {
+                float: left;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            ul {
+                float: left;
+                width: 100%;
+                margin-bottom: 10px;
+                li {
+                    float: left;
+                    clear: both;
+                    margin-bottom: 5px;
+                    margin-left: 30px;
+                    list-style-type: disc;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+// ------------- Scrollbar style -------------
+.transTrack {
+    @include scrollTrack($scrollbar-track-w, $scrollbar-track-margin, $popup-scrollbar-trackcolor, $transcript-content-h);
+}
+
+.transHandle {
+    @include scrollHandle($scrollbar-handle-w, 40px, $popup-scrollbar-handlecolor, $scrollbar-handle-margin);
+}

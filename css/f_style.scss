@@ -1,0 +1,2332 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "media_query.scss";
+@import "scroll.scss";
+
+
+//------------- comm` on style -------------------
+/*#qestimecont{
+    float: right;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    color: #333;
+    right: 0px;
+    border-radius: 50%;
+    margin: 10px;
+  .qestiontimer{
+    position: absolute;
+    float: left;
+    font-size: 50px;
+    margin: 24px 37px;
+  }
+}*/
+
+#qestimecont {
+  position: absolute;
+      margin: auto;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      float: right;
+      right: 0px;
+      top: 0px;
+}
+
+.qestiontimer {
+  color: #000;
+  display: inline-block;
+  line-height: 40px;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+svg circle {
+  stroke-dasharray: 113px;
+  stroke-dashoffset: 0px;
+  stroke-linecap: round;
+  stroke-width: 2px;
+  stroke: red;
+  fill: none;
+  animation: countdown 15s linear  forwards;
+}
+
+@keyframes countdown {
+  from {
+    stroke-dashoffset: 0px;
+  }
+  to {
+    stroke-dashoffset: 113px;
+  }
+}
+body,
+html {
+  font-family: $regular;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: $body-bgcolor;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.noMargin {
+  margin: 0 !important;
+}
+
+.noMarginRight {
+  margin-right: 0 !important;
+}
+
+.noMarginBottom {
+  margin-bottom: 0 !important;
+}
+
+i {
+  font-family: $regular-italic;
+
+  b {
+    font-family: $bold;
+    font-style: italic;
+  }
+}
+
+b {
+  font-family: $bold;
+
+  i {
+    font-family: $bold;
+    font-style: italic;
+  }
+}
+
+p {
+  line-height: normal;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 15px;
+  text-align: left;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+li {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+button {
+  overflow: hidden;
+}
+
+.clearFix {
+  clear: both;
+}
+
+.displayTable {
+  position: relative;
+  display: table;
+}
+
+.displayTableCell {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+#courseVideo{
+  width: 0px;
+  height: 0px;
+}
+.noTextSelect {
+  /* iOS Safari */
+  -webkit-user-select: none;
+
+  /* Konqueror HTML */
+  -moz-user-select: none;
+
+  /* Firefox */
+  -ms-user-select: none;
+
+  /* Internet Explorer/Edge */
+  user-select: none;
+  -webkit-touch-callout: none;
+
+  /* Safari */
+  -khtml-user-select: none;
+
+  /* Non-prefixed version, currently
+                              supported by Chrome and Opera */
+}
+
+/*
+button:focus {
+    outline: 0 !important;
+}*/
+#f_preload_main_images {
+  display: none;
+}
+
+#splashContainer {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  display: none;
+  background: #282828;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+//------------- framework start -------------------
+
+#f_wrapper {
+  position: relative;
+  overflow: hidden;
+  width: $wrapper-width;
+  height: $wrapper-height;
+  margin: 0 auto;
+  background-color: $wrapper-bgcolor;
+
+  @include tablet-portrait {
+    width: 100%;
+    background-color: red;
+  }
+
+
+  @include mobile-portrait {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  @include mobile-landscape {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  #path {
+    position: absolute;
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+    color: #333333;
+    left: 5px;
+    bottom: 45px;
+    z-index: 1000;
+    font-size: 10px;
+    padding: 5px 10px;
+    opacity: 0.5;
+  }
+
+  #f_preloader {
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  //  background-color: $preload-bgcolor;
+    background-color: #001734;
+    #f_loaderImage {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: $preload-img-w;
+      height: $preload-img-h;
+      margin-top: -1 * $preload-img-h / 2;
+      margin-left: -1 * $preload-img-w / 2;
+    }
+  }
+
+  #f_dummyVideoHolder {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: 2px;
+    height: 2px;
+  }
+
+  #f_orientationInfo {
+    position: absolute;
+    z-index: 2001;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $preload-bgcolor;
+    display: none;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 254px;
+      height: 212px;
+      margin-left: -126px;
+      margin-top: -106px;
+    }
+  }
+}
+
+#f_header {
+  position: absolute;
+  z-index: 800;
+  top: 5px;
+  left: 0;
+  width: $header-width;
+  height: $header-height;
+  background-color: $header-bgcolor;
+  //@include box-shadow(0px, 0px, 3px, 0px, rgba(0, 0, 0, 0.5));
+  @include mobile-portrait {
+    width: 100%;
+    height: 35px;
+  }
+
+
+  #f_companyLogo {
+  float: left;
+  width: 181px;
+  height: 55px;
+
+  /* margin-left: 10px; */
+  /* padding: 4px; */
+
+
+    @include mobile-portrait {
+      width: 109px;
+      height: 31px;
+      padding: 1px;
+    }
+
+
+    img {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  #f_courseTitle {
+    position: relative;
+    float: left;
+    width: auto;
+    margin: 5px 10px;
+    padding-right: 10px;
+    border-right: 1px solid #fff;
+
+    @include mobile-portrait {
+      margin: -5px 10px;
+      border-right: 0px solid #fff;
+    }
+
+
+    p {
+      font-family: $medium;
+      font-size: 20px;
+      float: left;
+      color: $course-title-text-color;
+      line-height: 45px;
+      margin-top: 0px;
+
+      @include mobile-portrait {
+        font-size: 14px;
+      }
+      @include mobile-landscape{
+        font-size: 15px;
+        line-height: 50px;
+        margin-top: 0px;
+      }
+    }
+  }
+
+  #f_pageTitle {
+    float: left;
+    width: auto;
+    margin: 5px 0;
+    display: block;
+    @include tablet-portrait {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      margin: 0px;
+      box-shadow: inset 0px 0px 7px 0px #084369;
+      background-color: #fff;
+
+
+    }
+
+    @include mobile-landscape {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      margin: 0px;
+      box-shadow: inset 0px 0px 7px 0px #084369;
+      background-color: #fff;
+
+    }
+    @include mobile-portrait {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      margin: 0px;
+      display: block;
+      box-shadow: inset 0px 0px 7px 0px #084369;
+      background-color: #fff;
+    }
+    @include mobile-landscape {
+      display: block;
+
+    }
+    p {
+      font-family: $regular-italic;
+      font-size: 15px;
+      line-height: 45px;
+      float: left;
+      color: $title-text-color;
+      @include mobile-portrait{
+      font-family: "RobotoItalic";
+      font-size: 12px;
+      float: left;
+      color: #333;
+      padding: 5px;
+      line-height: 22px;
+      font-weight: bold;
+      }
+      @include tablet-portrait{
+        font-family: "RobotoItalic";
+        font-size: 17px;
+        float: left;
+        color: #333;
+        padding: 10px;
+        line-height: 22px;
+            font-weight: bold;
+      }
+      @include mobile-landscape{
+      font-family: "RobotoItalic";
+      font-size: 15px;
+      float: left;
+      color: #333;
+      padding: 5px;
+      line-height: 22px;
+          font-weight: bold;
+
+    }
+    }
+
+  }
+
+  #f_pageTitle_ipad {
+    display: none;
+
+    @include mobile-portrait {
+      display: block;
+      width: 100%;
+      height: 24px;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 0 10px;
+      position: absolute;
+      bottom: -25px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+
+    p {
+      font-family: $bold-italic;
+      font-size: 14px;
+      line-height: 22px;
+      float: left;
+      color: #333;
+    }
+  }
+
+  #f_rightMenu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 204px;
+    height: 37px;
+
+
+    @include mobile-portrait {
+      width: 57px;
+      height: auto;
+      margin-top: -5px;
+
+
+    }
+
+
+    button {
+      position: relative;
+      cursor: pointer;
+      border: none;
+      display: block;
+      @include mobile-portrait{
+        display: none;
+      }
+    }
+
+    #f_pageCounter {
+      float: left;
+      width: 74px;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0);
+
+      @include mobile-portrait {
+        width: 54px;
+      }
+
+
+      p {
+        font-family: $bold;
+        font-size: 15px;
+        line-height: 37px;
+        float: left;
+        width: 100%;
+        text-align: center;
+        color: $course-title-text-color;
+
+        @include mobile-portrait {
+          font-size: 13px;
+          line-height: 25px;
+          margin-left: 10px;
+        }
+      }
+    }
+
+
+
+    #f_helpBtn {
+      float: left;
+      width: 37px;
+      height: 37px;
+      margin-left: 6px;
+      background-color: #032237;
+
+      @include bgImage("../assets/images/f_help.png", 100% 100%, no-repeat);
+      @include mobile-portrait {
+        width: 27px;
+        height: 27px;
+      }
+    }
+    #f_helpBtn_bottom {
+      float: left;
+      width: 37px;
+      height: 37px;
+      margin-left: 6px;
+      background-color: #032237;
+
+      @include bgImage("../assets/images/f_help.png", 100% 100%, no-repeat);
+      @include mobile-portrait {
+        width: 27px;
+        height: 27px;
+      }
+    }
+    #f_gadgetPatch {
+      position: absolute;
+      top: 34px;
+      right: 0;
+      width: 37px;
+      height: 0;
+      //background-color: $dark-bg-color;
+
+      @include mobile-portrait {
+        width: 27px;
+        top: 25px;
+      }
+    }
+  }
+}
+
+
+.slidertimer{
+    position: absolute;
+    color: #fff;
+    margin-top: -20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+	display:none;
+}
+
+// ------- section -------
+
+#f_content {
+  position: relative;
+  z-index: 700;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: $content-width;
+  height: $content-height;
+  background-color: $content-bgcolor;
+
+  @include bgImage("../assets/images/f_bg.jpg", 100% 100%, no-repeat);
+  @include mobile-portrait {
+    width: 100%;
+    height: 100%;
+
+    @include bgImage("../assets/images/f_bg_portrait.jpg", 100% 100%, no-repeat);
+  }
+
+
+  #f_pageLoader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $content-width;
+    height: $content-height;
+    background-color: transparent;
+    overflow: hidden;
+    padding: 0;
+
+    @include mobile-portrait {
+      overflow-y: auto;
+    }
+
+
+    @include mobile-landscape {
+      overflow-y: auto;
+    }
+  }
+
+  #f_pagePreloader {
+    position: absolute;
+    z-index: 1999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    @include bgImage("../assets/images/f_bg.jpg", 100% 100%, no-repeat);
+    @include mobile-portrait {
+      @include bgImage("../assets/images/f_bg_portrait.jpg", 100% 100%, no-repeat);
+    }
+
+
+    #f_pageLoaderImage {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: $preload-img-w;
+      height: $preload-img-h;
+      margin-top: -32px;
+      margin-left: -32px;
+    }
+  }
+}
+
+#f_ipadPlayBtnHolder {
+  position: absolute;
+  z-index: 801;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+
+  #f_ipadPlayBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    background-color: #084369;
+    background-position: 3px 7px;
+
+    @include bgImage("../assets/images/f_play_big.png", 100px 80px, no-repeat);
+    @include mobile-portrait {
+      width: 80px;
+      height: 80px;
+      margin: -40px 0 0 -40px;
+
+      @include bgImage("../assets/images/f_play_big.png", 80px 60px, no-repeat);
+    }
+  }
+}
+
+// ------- footer -------
+
+#f_footer {
+  position: absolute;
+  z-index: 800;
+  bottom: 0;
+  left: 50%;
+  width: $footer-width;
+  height: $footer-height;
+  margin-left: -1 * $footer-width / 2;
+  background-color: $footer-bgcolor;
+
+  @include mobile-portrait {
+    width: 320px;
+    margin-left: -159px;
+      height: 35px;
+  }
+
+
+  @include mobile-landscape {
+    width: 460px !important;
+    margin-left: -226px;
+
+  }
+
+
+  @include tablet-portrait {
+    width: 460px;
+    margin-left: -230px;
+  }
+
+    @include tablet-landscape{
+      width: 460px!important;
+
+    }
+
+  #f_progresBarHolder {
+    position: relative;
+    float: left;
+    width: 260px;
+    height: $footer-height;
+
+    @include mobile-portrait {
+      width: 132px;
+    }
+
+
+  @include mobile-landscape {
+    //   width: 136px;
+    }
+
+
+    #f_scrubber {
+      position: relative;
+      width: 226px;
+      height: 6px;
+      margin: 10px 17px 24px 17px;
+      background-color: #032237;
+
+      @include mobile-portrait {
+        width: 100px;
+      }
+
+
+      @include mobile-landscape {
+        width: 100px;
+        left: 50%;
+        margin-left: -50px;
+
+      }
+
+
+      #f_progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 100%;
+        background-color: #ecd935;
+        @include mobile-portrait {
+          width: 100px;
+        }
+
+
+        @include mobile-landscape {
+          width: 100px;
+
+        }
+      }
+    }
+  }
+
+  .f_navBtn {
+    float: left;
+    width: 50px;
+    height: $footer-height;
+    cursor: pointer;
+    background-color: $footer-nav-color2;
+    @include mobile-portrait{
+      width: 35px;
+      height: 35px;
+    }
+    /*@include mobile-landscape{
+      width: 35px;
+      height: 35px;
+    }*/
+  }
+  #f_helpBtn {
+
+    @include bgImage("../assets/images/f_help.png", 100% 100%, no-repeat);
+  }
+  #f_transcriptBtn {
+
+    @include bgImage("../assets/images/f_transcript.png", 100% 100%, no-repeat);
+    @include mobile-portrait{
+      display: none;
+    }
+  }
+  #f_helpBtn_bottom {
+
+    @include bgImage("../assets/images/f_help.png", 100% 100%, no-repeat);
+  }
+  #f_transcriptBtn_bottom {
+
+    @include bgImage("../assets/images/f_transcript.png", 100% 100%, no-repeat);
+  }
+  .f_unmute {
+    @include bgImage("../assets/images/f_unmute.png", 100% 100%, no-repeat);
+  }
+
+  .f_mute {
+    @include bgImage("../assets/images/f_mute.png", 100% 100%, no-repeat);
+  }
+
+  #f_backBtn {
+    @include bgImage("../assets/images/f_prev.png", 100% 100%, no-repeat);
+  }
+
+  #f_nextBtn {
+    @include bgImage("../assets/images/f_next.png", 100% 100%, no-repeat);
+  }
+
+  #f_mediaBtn {
+    background-color: #084369;
+  }
+
+  .f_play {
+    @include bgImage("../assets/images/f_play.png", 100% 100%, no-repeat);
+  }
+
+  .f_pause {
+    @include bgImage("../assets/images/f_pause.png", 100% 100%, no-repeat);
+  }
+
+  .f_replay {
+    @include bgImage("../assets/images/f_replay.png", 100% 100%, no-repeat);
+  }
+
+  #f_volumeBtn {
+    display: block;
+
+    @include mobile-portrait {
+      display: none;
+    }
+
+
+    @include mobile-landscape {
+      display: none;
+    }
+
+
+    @include tablet-portrait {
+      display: none;
+    }
+    @include tablet-landscape{
+        display: none !important;
+    }
+  }
+
+  #f_nextIndicator {
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    display: none;
+    width: auto;
+    height: auto;
+
+    p {
+      font-family: $regular;
+      font-size: 14px;
+      position: relative;
+      padding: 5px 10px;
+      background-color: #3c763d;
+
+      .arrow {
+        position: absolute;
+        right: 10px;
+        bottom: -5px;
+        display: inline-block !important;
+        width: 0;
+        height: 0;
+        border-top: 6px solid #3c763d;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+      }
+    }
+  }
+}
+
+.blueColor {
+  background-color: #287fb8 !important;
+}
+
+.navOverOne {
+  background-color: #084369 !important;
+}
+
+
+/****************** for leviton edit Rajadurai**********************/
+#f_menuBtn  {
+  float: left;
+  width: 37px;
+  height: 37px;
+  margin-left: 6px;
+  background-color: #032237;
+
+  @include bgImage("../assets/images/f_menu.png", 100% 100%, no-repeat);
+  @include mobile-portrait {
+    width: 27px;
+    height: 27px;
+  }
+}
+#f_menuBtn_bottom  {
+  float: left;
+  width: 37px;
+  height: 37px;
+  margin-left: 6px;
+  background-color: #032237;
+
+  @include bgImage("../assets/images/f_menu.png", 100% 100%, no-repeat);
+  @include mobile-portrait {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+#f_gadgetPopup {
+    position: absolute;
+    z-index: 991;
+    display: none;
+    overflow: hidden;
+    width: auto;
+    height: 0;
+    padding: 0;
+    background-color: $primary-color;
+    @include mobile-portrait {
+      bottom:40px;
+      width: 50px;
+      //height: 143px !important;
+    }
+    @include mobile-landscape {
+      display: none !important;
+    }
+    #f_menuOver {
+        line-height: 20px;
+        position: absolute;
+        width: auto;
+        height: 20px;
+        padding: 5px 10px;
+        text-align: center;
+        color: #fff;
+        background-color: $primary-color;
+    }
+
+
+
+
+
+#f_gadgetPatch {
+    position: absolute;
+    width: 37px;
+    height: 0px;
+    background-color: $primary-color;
+    top: 34px;
+    right: 0;
+}
+
+
+  .f_navBtn {
+    font-family: $icon-font;
+    font-size: 30px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    background-color: $secondary-color;
+  }
+
+
+  #f_helpBtn {
+    margin-top: 5px;
+
+    @include bgImage("../assets/images/f_help.png", 100% 100%, no-repeat);
+  }
+
+  #f_transcriptBtn {
+    margin-top: 5px;
+
+    @include bgImage("../assets/images/f_transcript.png", 100% 100%, no-repeat);
+  }
+  #f_helpBtn_bottom {
+    margin-top: 5px;
+
+    @include bgImage("../assets/images/f_help.png", 100% 100%, no-repeat);
+  }
+
+  #f_transcriptBtn_bottom {
+    margin-top: 5px;
+
+    @include bgImage("../assets/images/f_transcript.png", 100% 100%, no-repeat);
+  }
+
+
+  #f_menuOver {
+    line-height: 20px;
+    position: absolute;
+    width: auto;
+    height: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    color: #fff;
+    background-color: $dark-bg-color;
+  }
+}
+
+// ------- Transcript container -------
+
+#f_transcriptContainer {
+  position: absolute;
+  z-index: 9940;
+  top: 180px;
+  left: 20px;
+  display: none;
+  overflow: hidden;
+  width: $transcript-box-w;
+  height: $transcript-box-h;
+  border: 1px solid $transcript-bgcolor;
+  background-color: $transcript-bgcolor;
+  //cursor: move;
+
+  @include mobile-portrait {
+    width: $transcript-box-mobile-w;
+  }
+
+
+  #f_transHeader {
+    position: relative;
+    float: left;
+    width: $transcript-header-w;
+    height: $transcript-header-h;
+    margin: 0;
+    //cursor: pointer;
+    background-color: $popup-title-bg-color;
+
+    #f_transTitle {
+      font-family: $popup-title-text-font;
+      font-size: $popup-title-text-size;
+      line-height: $transcript-header-h;
+      float: left;
+      width: auto;
+      height: auto;
+      margin-left: 10px;
+      //cursor: pointer;
+      color: #333;
+
+      @extend .displayTableCell;
+    }
+
+    #f_transClose {
+      font-family: $icon-font;
+      font-size: 24px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: $transcript-closebtn-w;
+      height: $transcript-closebtn-h;
+      cursor: pointer;
+      color: #fff;
+      border: none;
+      border-left: 1px solid $dark-bg-color;
+      background-color: #084369;
+    }
+  }
+
+  #f_transContent {
+    position: relative;
+    top: 8px;
+    left: 8px;
+    overflow: hidden;
+    width: 96%;
+    height: $transcript-content-h;
+    background-color: $transcript-content-bgcolor;
+
+    @include mobile-portrait {
+        width: 236px !important;
+    }
+
+
+    #f_transText {
+      font-family: $regular;
+      font-size: 14px;
+      line-height: 18px;
+      float: left;
+      width: 97%;
+      height: auto;
+      margin: 0;
+      text-align: left;
+      color: $transcript-text-color;
+
+      p {
+        float: left;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        float: left;
+        width: 100%;
+        margin-bottom: 10px;
+
+        li {
+          float: left;
+          clear: both;
+          margin-bottom: 5px;
+          margin-left: 30px;
+          list-style-type: disc;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// ------------- Scrollbar style -------------
+
+.transTrack {
+  @include scrollTrack($scrollbar-track-w, $scrollbar-track-margin, $popup-scrollbar-trackcolor, $transcript-content-h);
+}
+
+.transHandle {
+  @include scrollHandle($scrollbar-handle-w, 40px, $popup-scrollbar-handlecolor, $scrollbar-handle-margin);
+}
+
+// ------- cc container -------
+
+
+
+// ------- menu container -------
+
+.menuPlusIcon {
+  @include bgImage("../assets/images/f_plus.png", 100% 100%, no-repeat);
+}
+
+.menuMinusIcon {
+  @include bgImage("../assets/images/f_minus.png", 100% 100%, no-repeat);
+}
+
+#f_menuPopup {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: block;
+  width: $popup-container-w;
+  height: $popup-container-h;
+  background-color: $popup-overlay-color;
+
+  @include mobile-portrait {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  @include tablet-portrait {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  #f_menuContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: $menu-box-w;
+    height: $menu-box-h;
+    margin-top: -1 * $menu-box-h / 2;
+    margin-left: -1 * $menu-box-w / 2;
+    background-color: $menu-bgcolor;
+
+    @include mobile-portrait {
+      width: 90%;
+      height: 400px;
+      margin-top: -200px;
+      margin-left: -45%;
+    }
+    @include mobile-landscape {
+      width: 90%;
+      height: 482px;
+      margin-top: -153px;
+      margin-left: -45%;
+      margin-bottom: 100px;
+    }
+
+    #f_menuHeader {
+      position: relative;
+      float: left;
+      width: 100%;
+      height: $menu-header-h - 1;
+      margin: 0;
+      cursor: pointer;
+      border-bottom: 1px solid $dark-bg-color;
+      background-color: $popup-title-bg-color;
+
+      #f_menuTitle {
+        font-family: $popup-title-text-font;
+        font-size: $popup-title-text-size;
+        line-height: $menu-header-h;
+        float: left;
+        width: auto;
+        height: auto;
+        margin-left: 10px;
+        cursor: pointer;
+        color: #333;
+
+        @extend .displayTableCell;
+      }
+
+      #f_menuClose {
+        font-family: $icon-font;
+        font-size: 24px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: $menu-closebtn-w;
+        height: $menu-closebtn-h;
+        cursor: pointer;
+        color: #fff;
+        border-left: 1px solid $dark-bg-color;
+        background-color: #084369;
+      }
+    }
+  }
+
+  #f_menuContent {
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  //  width: 100% !important;
+    height: $menu-content-h;
+    background-color: $menu-content-bgcolor;
+    //width: 100% !important;
+    @include mobile-portrait{
+      width: 100% !important;
+    }
+    @include mobile-landscape{
+      width: 100% !important;
+    }
+    .f_statusBar {
+      float: left;
+      width: 11px;
+      height: 11px;
+      margin: 14px 14px 14px 2px;
+      background-color: #fff;
+    }
+
+    .f_menuText {
+      font-family: $regular;
+      font-size: 14px;
+      position: relative;
+      display: table-cell;
+      width: 100%;
+      height: 40px;
+      margin: 0 0 0 20px;
+      text-align: left;
+      vertical-align: middle;
+      color: #fff;
+    }
+
+    .f_openClose {
+      position: absolute;
+      top: 13px;
+      right: 15px;
+      width: 15px;
+      height: 15px;
+    }
+
+    .f_accordContainer {
+      background-color: $accord-container_bgcolor;
+    }
+
+    .f_menuLevel_1 {
+      position: relative;
+      display: table;
+      width: 100%;
+      height: $menu-level-1-height;
+      margin-bottom: 0;
+      padding: 0 13px;
+      border-top: 1px solid $menu-level-1-bordercolor;
+      background: $menu-level-1-bgcolor;
+    }
+
+    .f_menuLevel_2 {
+      position: relative;
+      left: $menu-level-2-left;
+      display: table;
+      width: calc(100% - 15px);
+      height: $menu-level-2-height;
+      margin-bottom: 0;
+      padding: 0 13px;
+      border-top: 1px solid $menu-level-2-bordercolor;
+      background: $menu-level-2-bgcolor;
+
+      &:first-child {
+        border-top: 0;
+      }
+    }
+
+    .f_menuLevel_3 {
+      position: relative;
+      left: $menu-level-3-left;
+      display: table;
+      width: calc(100% - 30px);
+      height: $menu-level-3-height;
+      margin-bottom: 0;
+      padding: 0 13px;
+      border-top: 1px solid $menu-level-3-bordercolor;
+      background: $menu-level-3-bgcolor;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+.f_pageCompleted {
+  background-color: $menu-completed-color !important;
+}
+
+.f_pageInprogress {
+  background-color: $menu-inprogress-color !important;
+}
+
+.f_pageInprogressText {
+  color: $menu-inprogress-textcolor !important;
+}
+
+.f_pageNotStarted {
+  background-color: $menu-notstarted-color !important;
+}
+
+// ------------- menu style -------------
+
+.menuTrack {
+  @include scrollTrack($scrollbar-track-w, $scrollbar-handle-margin, $popup-scrollbar-trackcolor, $menu-content-h);
+}
+
+.menuHandle {
+  @include scrollHandle($scrollbar-handle-w, 80px, $popup-scrollbar-handlecolor, $scrollbar-handle-margin);
+}
+
+// ------- resource container -------
+
+#f_resourcePopup {
+  position: absolute;
+  z-index: 9950;
+  top: 0;
+  left: 0;
+  display: none;
+  width: $popup-container-w;
+  height: $popup-container-h;
+  background-color: $popup-overlay-color;
+
+  #f_resourceContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    width: $resources-box-w;
+    height: $resources-box-h;
+    margin-top: -1 * $resources-box-h / 2;
+    margin-left: -1 * $resources-box-w / 2;
+    background-color: $resources-bgcolor;
+
+    @include mobile-portrait {
+      width: 90%;
+      height: 400px;
+      margin-top: -200px;
+      margin-left: -45%;
+    }
+
+
+    #f_resourceHeader {
+      position: relative;
+      float: left;
+      width: $resources-header-w;
+      height: $resources-header-h;
+      margin: 0;
+      cursor: pointer;
+      background-color: $popup-title-bg-color;
+
+      #f_resourceTitle {
+        font-family: $popup-title-text-font;
+        font-size: $popup-title-text-size;
+        line-height: $resources-header-h;
+        float: left;
+        width: auto;
+        height: auto;
+        margin-left: 10px;
+        cursor: pointer;
+        color: $popup-title-text-color;
+
+        @extend .displayTableCell;
+      }
+
+      #f_resourceClose {
+        font-family: $icon-font;
+        font-size: 24px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: $resources-closebtn-w;
+        height: $resources-closebtn-h;
+        cursor: pointer;
+        color: #fff;
+        border-left: 1px solid $dark-bg-color;
+        background-color: $dark-bg-color;
+      }
+    }
+  }
+
+  #f_resourceContent {
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100% !important;
+    height: $resources-content-h;
+    background-color: $resources-content-bgcolor;
+
+    .f_resourceRow {
+      font-family: $regular;
+      font-size: 14px;
+      line-height: 20px;
+      float: left;
+      width: $resources-content-w;
+      height: auto;
+      padding: 5px 0;
+      text-align: left;
+      color: #fff;
+      border-bottom: 1px solid $resource-bordercolor;
+      background-color: $resource-bgcolor;
+
+      .f_resourceColumn1 {
+        position: relative;
+        display: table;
+        float: left;
+        width: calc(30% - 20px);
+        height: auto;
+        padding: 5px 10px;
+
+        p {
+          position: relative;
+          display: table-cell;
+          width: auto;
+          vertical-align: middle;
+        }
+
+        a {
+          text-decoration: underline;
+          color: $resource-link-color;
+        }
+      }
+
+      .f_resourceColumn2 {
+        position: relative;
+        display: table;
+        float: left;
+        width: 70%;
+        height: auto;
+        padding: 5px 10px;
+        border-left: 1px solid $resource-split-color;
+
+        p {
+          position: relative;
+          display: table-cell;
+          width: auto;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+// ------------- Resource style -------------
+
+.resourceTrack {
+  @include scrollTrack($scrollbar-track-w, $scrollbar-handle-margin, $popup-scrollbar-trackcolor, $resources-content-h);
+}
+
+.resourceHandle {
+  @include scrollHandle($scrollbar-handle-w, 80px, $popup-scrollbar-handlecolor, $scrollbar-handle-margin);
+}
+
+// ------- glossary container -------
+
+#f_helpPopup {
+  position: absolute;
+  z-index: 9950;
+  top: 0;
+  left: 0;
+  display: none;
+  width: $popup-container-w;
+  height: $popup-container-h;
+  background-color: $popup-overlay-color;
+
+  #f_helpContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    width: $glossary-box-w;
+    height: $glossary-box-h;
+    margin-top: -1 * $glossary-box-h / 2;
+    margin-left: -1 * $glossary-box-w / 2;
+    background-color: $glossary-bgcolor;
+
+    @include mobile-portrait {
+      width: 90%;
+      height: 400px;
+      margin-top: -200px;
+      margin-left: -45%;
+    }
+    @include tablet-portrait{
+      position: absolute;
+      width: 700px !important;
+      height: 533px!important;
+      top: 28%!important;
+      left: 4%!important;
+      margin-top: 0px !important;
+      margin-left: 0px !important;
+
+
+}
+
+
+
+    #f_helpHeader {
+      position: relative;
+      float: left;
+      width: $glossary-header-w;
+      height: $glossary-header-h;
+      margin: 0;
+      cursor: pointer;
+      border-bottom: 1px solid $dark-bg-color;
+      background-color: $popup-title-bg-color;
+
+      #f_helpTitle {
+        font-family: $popup-title-text-font;
+        font-size: $popup-title-text-size;
+        line-height: $glossary-header-h;
+        float: left;
+        width: auto;
+        height: auto;
+        margin-left: 10px;
+        cursor: pointer;
+        color: #333;
+        @extend .displayTableCell;
+      }
+
+      #f_helpClose {
+        font-family: $icon-font;
+        font-size: 24px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: $glossary-closebtn-w;
+        height: $glossary-closebtn-h;
+        cursor: pointer;
+        color: #fff;
+        border-left: 1px solid $dark-bg-color;
+        background-color: $dark-bg-color;
+      }
+    }
+
+    #f_helpContent {
+      position: relative;
+      overflow: hidden;
+      width: $glossary-content-w;
+      height: $glossary-content-h;
+      @include tablet-portrait{
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 481px !important;
+      }
+
+      #f_helpCol1 {
+        float: left;
+        width: $glossary-col-1-width;
+        height: $glossary-col-1-height;
+        margin: 0;
+
+        @include mobile-portrait {
+          width: 100%;
+        }
+
+
+        ul {
+          clear: both;
+          list-style: none;
+
+          li {
+            float: left;
+            width: $glossary-col-1-width;
+            height: $glossary-col-1-width;
+            color: #737373;
+            background-color: #333;
+            margin-bottom: 0px !important;
+
+            button {
+              font-family: $regular;
+              font-size: 20px;
+              position: relative;
+              width: 100%;
+              height: 100%;
+              color: #888;
+              border: none;
+              border-bottom: 1px solid $glossary-alphabet-normalborder;
+              background-color: #6b6b6b;
+            }
+
+            .glossaryEnabled {
+              cursor: pointer;
+              color: #fff;
+              border-bottom: 1px solid #18557a;
+              background-color: #2980b9;
+            }
+
+            .selected {
+              background-color: $dark-bg-color;
+            }
+          }
+        }
+      }
+
+      #f_helpCol2 {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        width: $glossary-col-2-width;
+        height: $glossary-col-2-height;
+        margin: 0;
+
+        @include mobile-portrait {
+          width: 100%;
+        }
+
+
+        ul {
+          clear: both;
+          list-style: none;
+
+          li {
+            float: left;
+            clear: both;
+            width: $glossary-col-2-width;
+            height: 39px;
+            color: #737373;
+            border-bottom: 1px solid #22455f;
+            margin-bottom: 0px !important;
+
+            button {
+              font-family: $regular;
+              font-size: 14px;
+              position: relative;
+              overflow: hidden;
+              width: 100%;
+              height: 100%;
+              padding: 0 20px;
+              text-align: left;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              color: #ccc;
+              border: none;
+              background-color: $glossary-keyword-normal;
+            }
+
+            .selected {
+              color: #fff;
+              background-color: #2a7fb9;
+            }
+          }
+        }
+      }
+
+      @include mobile-portrait {
+        width: 100%;
+      }
+
+
+      #f_helpCol3 {
+        font-family: $regular;
+        position: relative;
+        float: left;
+        overflow: hidden;
+        width: $glossary-col-3-width;
+        height: $glossary-col-3-height;
+        color: #fff;
+        background-color: $glossary-definition-bgcolor;
+
+        #f_g_heading {
+          float: left;
+          clear: both;
+          width: auto;
+          height: auto;
+          padding: 10px;
+
+          p {
+            font-size: 20px;
+          }
+        }
+
+        #f_g_description {
+          float: left;
+          clear: both;
+          width: auto;
+          height: auto;
+          margin-bottom: 10px;
+          padding: 0 10px;
+
+          p {
+            font-size: 14px;
+            line-height: 18px;
+            text-align: left;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ------------- Glossary style -------------
+
+.glossaryTrack {
+  @include scrollTrack($scrollbar-track-w, $scrollbar-handle-margin, $popup-scrollbar-trackcolor, $glossary-content-h);
+}
+
+.glossaryHandle {
+  @include scrollHandle($scrollbar-handle-w, 80px, $popup-scrollbar-handlecolor, $scrollbar-handle-margin);
+}
+
+// ------------- bo0tstrap style -------------
+
+// ------- help container -------
+
+#f_helpPopup {
+  position: absolute;
+  z-index: 9950;
+  top: 0;
+  left: 0;
+  display: none;
+  width: $popup-container-w;
+  height: $popup-container-h;
+  background-color: $popup-overlay-color;
+
+  #f_helpContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 900px;
+    height: $glossary-box-h;
+    margin-top: -1 * $glossary-box-h / 2;
+    margin-left:-450px;
+    background-color: #001734;
+
+
+    @include mobile-portrait {
+      width: 100%;
+      height: 100%;
+      margin-left: 0px;
+      left: 0px;
+      top: 0px;
+      margin-top: 0px;
+    }
+    @include mobile-landscape{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      display: block;
+      width: 100%;
+      height: 409px;
+      margin-top: 0px;
+      margin-left: 0px;
+      background-color: #001734;
+  }
+
+
+    #f_helpHeader {
+      position: relative;
+      float: left;
+      width: $glossary-header-w;
+      height: $glossary-header-h;
+      margin: 0;
+      cursor: pointer;
+      border-bottom: 1px solid $dark-bg-color;
+      background-color: $popup-title-bg-color;
+
+      #f_helpTitle {
+        font-family: $popup-title-text-font;
+        font-size: $popup-title-text-size;
+        line-height: $glossary-header-h;
+        float: left;
+        width: auto;
+        height: auto;
+        margin-left: 10px;
+        cursor: pointer;
+        color: #333;
+
+        @extend .displayTableCell;
+      }
+
+      #f_helpClose {
+        font-family: $icon-font;
+        font-size: 24px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: $glossary-closebtn-w;
+        height: $glossary-closebtn-h;
+        cursor: pointer;
+        color: #fff;
+        border-left: 1px solid $dark-bg-color;
+        background-color: #084369;
+      }
+    }
+
+    #f_helpContent {
+      position: relative;
+      overflow: hidden;
+      width: $glossary-content-w;
+      height: $glossary-content-h;
+      @include mobile-portrait{
+        width: 100%;
+        height: 100%;
+      }
+      #f_helpCol1 {
+        float: left;
+        width: $glossary-col-1-width;
+        height: $glossary-col-1-height;
+        margin: 0;
+
+        @include mobile-portrait {
+          width: 100%;
+        }
+
+
+        ul {
+          clear: both;
+          list-style: none;
+
+          li {
+            float: left;
+            width: $glossary-col-1-width;
+            height: $glossary-col-1-width;
+            color: #737373;
+            background-color: #333;
+            margin-bottom: 0px !important;
+
+            button {
+              font-family: $regular;
+              font-size: 20px;
+              position: relative;
+              width: 100%;
+              height: 100%;
+              color: #888;
+              border: none;
+              border-bottom: 1px solid $glossary-alphabet-normalborder;
+              background-color: #6b6b6b;
+            }
+
+            .helpEnabled {
+              cursor: pointer;
+              color: #fff;
+              border-bottom: 1px solid #18557a;
+              background-color: #2980b9;
+            }
+
+            .selected {
+              background-color: $dark-bg-color;
+            }
+          }
+        }
+      }
+
+      #f_helpCol2 {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        width: $glossary-col-2-width;
+        height: $glossary-col-2-height;
+        margin: 0;
+
+        @include mobile-portrait {
+          width: 100%;
+        }
+
+
+        ul {
+          clear: both;
+          list-style: none;
+
+          li {
+            float: left;
+            clear: both;
+            width: $glossary-col-2-width;
+            height: 39px;
+            color: #737373;
+            border-bottom: 1px solid #22455f;
+            margin-bottom: 0px !important;
+
+            button {
+              font-family: $regular;
+              font-size: 14px;
+              position: relative;
+              overflow: hidden;
+              width: 100%;
+              height: 100%;
+              padding: 0 20px;
+              text-align: left;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              color: #ccc;
+              border: none;
+              background-color: $glossary-keyword-normal;
+            }
+
+            .selected {
+              color: #fff;
+              background-color: #2a7fb9;
+            }
+          }
+        }
+      }
+
+      @include mobile-portrait {
+        width: 100%;
+      }
+
+
+      #f_helpCol3 {
+        font-family: $regular;
+        position: relative;
+        float: left;
+        overflow: hidden;
+        width: $glossary-col-3-width;
+        height: $glossary-col-3-height;
+        color: #fff;
+        background-color: $glossary-definition-bgcolor;
+
+        #f_h_heading {
+          float: left;
+          clear: both;
+          width: auto;
+          height: auto;
+          padding: 10px;
+
+          p {
+            font-size: 20px;
+          }
+        }
+
+        #f_h_description {
+          float: left;
+          clear: both;
+          width: auto;
+          height: auto;
+          margin-bottom: 10px;
+          padding: 0 10px;
+
+          p {
+            font-size: 14px;
+            line-height: 18px;
+            text-align: left;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .h_home{
+    position: relative;
+    float: left;
+    width: 225px;
+    height: auto;
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+    padding: 22px;
+    p{
+          margin-bottom: 0px!important;
+    }
+    @include mobile-portrait{
+      width: 100%;
+      font-size: 14px;
+      padding: 3px;
+    }
+    @include mobile-landscape{
+      position: relative;
+      float: left;
+      width: 48%;
+      height: auto;
+      font-size: 14px;
+      color: rgba(255,255,255,0.7);
+      padding: 1px 32px;
+    }
+  }
+  .h_help{
+  @extend .h_home;
+
+  }
+  .h_menu{
+  @extend .h_home;
+
+  }
+  .h_trnascript{
+    @extend .h_home;
+
+  }
+  .h_nextprvious{
+  @extend .h_home;
+  img{
+    @include mobile-portrait{
+      width: 23px;
+      height: 23px;
+    }
+  }
+  }
+  .h_playpaush{
+  @extend .h_home;
+  img{
+    width: 108px;
+    @include mobile-portrait{
+      width: 50px;
+      height: 23px;
+    }
+    @include mobile-landscape{
+      width: 50px;
+      height: 23px;
+    }
+  }
+
+  }
+
+  .h_slider{
+    @extend .h_home;
+      img{
+        width:87px;
+        @include mobile-portrait{
+          width: 50px;
+          height: 23px;
+        }
+        @include mobile-landscape{
+          width: 50px;
+          height: 23px;
+        }
+      }
+
+  }
+  .h_muteaUnmute{
+    @extend .h_home;
+
+    img{
+      width:87px;
+      @include mobile-portrait{
+        width: 63px;
+        height: 23px;
+      }
+      @include mobile-landscape{
+        width: 63px;
+        height: 23px;
+      }
+    }
+
+  }
+  .navigation_img{
+      position: absolute;
+      float: left;
+      width: 100%;
+      height: 100px;
+      top: 50%;
+      margin-top: -50px;
+
+}
+
+  .left_ost{
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 150px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    padding: 20px;
+
+
+  }
+  .right_ost{
+    @extend .left_ost;
+  }
+  .center_ost{
+    @extend .left_ost;
+  }
+}
+#top_possition{
+position: relative;
+float: left;
+width: 100%;
+height: 100%;
+img{
+  width: 45px;
+  height: 45px
+}
+@include mobile-portrait{
+  img{
+    width: 23px;
+    height: 23px;
+  }
+}
+@include mobile-landscape{
+  img{
+    width: 23px;
+    height: 23px
+  }
+
+}
+}
+.bottom_posstion{
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+  img{
+    width: 45px;
+    height: 45px
+  }
+}
+// ------------- Glossary style -------------
+
+.helpTrack {
+  @include scrollTrack($scrollbar-track-w, $scrollbar-handle-margin, $popup-scrollbar-trackcolor, $glossary-content-h);
+}
+
+.helpHandle {
+  @include scrollHandle($scrollbar-handle-w, 80px, $popup-scrollbar-handlecolor, $scrollbar-handle-margin);
+}
+
+// ------------- bo0tstrap style -------------
+
+/*--- resume n restart block ---*/
+
+#resumeBlock {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+    display: none;
+
+	#resumePopup {
+		position: absolute;
+		width: 454px;
+		height: 150px;
+		background-color: #ffffff;
+		left: 50%;
+		top: 50%;
+		margin-top: -75px;
+		margin-left: -227px;
+		box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+		border-bottom-left-radius: 20px;
+		overflow: hidden;
+
+		.topPatch {
+			width: 100%;
+			height: 10px;
+			background-color: #8dc63f;
+		}
+
+		p {
+			float: left;
+			width: 414px;
+			text-align: center;
+			font-size: 18px;
+			padding: 20px 20px 15px 20px;
+			color: #000;
+		}
+
+		#restart_button{
+			float: right;
+			margin-right: 80px;
+			width: 100px;
+			height: 30px;
+			margin-bottom: 15px;
+			background: #013d84;
+			border: none;
+			color: #fff;
+			font-size: 16px;
+			cursor: pointer;
+			box-shadow: 1px 1px 0px 1px #8dc63f;
+
+			&:hover{
+				background: #8dc63f;
+			}
+		}
+
+
+		#resume_button{
+			float: right;
+			margin-right: 80px;
+			width: 100px;
+			height: 30px;
+			margin-bottom: 15px;
+			background: #013d84;
+			border: none;
+			color: #fff;
+			font-size: 16px;
+			cursor: pointer;
+			box-shadow: 1px 1px 0px 1px #8dc63f;
+
+			&:hover{
+				background: #8dc63f;
+			}
+		}
+	}
+}
+/*@media only screen and (max-height: 568px) and (max-width: 320px) and (orientation: portrait){
+ #f_courseTitle p {
+    font-size: 14px!important;
+    line-height: 40px!important;
+}
+ #f_pageCounter p {
+      font-size: 14px!important;
+      line-height: 32px!important;
+  }
+  #f_footer .f_navBtn {
+
+    width: 31px!important;
+    height: 31px!important;
+
+}
+#f_footer {
+    width: 294px!important;
+    margin-left: -149px!important;
+        height: 31px!important;
+}
+}
+/*--- resume n restart block end ---*/
+#f_gadgetBtn {
+    float: left;
+    width: 37px;
+    height: 37px;
+    margin-left: 6px;
+    background-color: $primary-color;
+    display: none;
+    @include bgImage("../assets/images/f_setting.png", 100% 100%, no-repeat);
+    @include mobile-portrait {
+        width: 27px;
+        height: 27px;
+        display: block;
+    }
+    @include mobile-landscape {
+        width: 27px;
+        height: 27px;
+
+    }
+    &:hover {
+        background-color: $secondary-color !important;
+    }
+}
+
+
+#f_homeBtn {
+    float: left;
+    width: 37px;
+    height: 37px;
+    margin-left: 6px;
+    background-color: $primary-color;
+    display: block;
+    @include bgImage("../assets/images/f_home.png", 100% 100%, no-repeat);
+    @include mobile-portrait {
+      width: 37px;
+      height: 37px;
+      display: block;
+    }
+
+    &:hover {
+        background-color: $secondary-color !important;
+    }
+}
+
+#f_homeBtn_bottom {
+    float: left;
+    width: 37px;
+    height: 37px;
+    margin-left: 6px;
+    background-color: $primary-color;
+    display: none;
+    @include bgImage("../assets/images/f_home.png", 100% 100%, no-repeat);
+    @include mobile-portrait {
+        width: 35px;
+        height: 35px;
+        display: block;
+    }
+    @include mobile-landscape {
+        width: 27px;
+        height: 27px;
+        display: none;
+    }
+    &:hover {
+        background-color: $secondary-color !important;
+    }
+}
+.f_mc_optionBtn{
+  outline: none;
+}

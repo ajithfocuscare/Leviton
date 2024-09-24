@@ -1,0 +1,48 @@
+.textContainer {
+  position: relative;
+  float: left;
+  width: calc(100% - 15px);
+  height: auto;
+}
+
+.sliderBar {
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+}
+
+.scrollTrack {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #b6b6bb;
+  left: 2px;
+}
+
+.knobBar {
+  position: relative;
+  width: 6px;
+  height: auto;
+  background: #094368;
+  border-radius: 6px;
+  left: 0px;
+}
+
+.unselectable {
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+.selectable {
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+/*# sourceMappingURL=scroll.css.map */

@@ -1,0 +1,206 @@
+@import 'fonts.scss';
+//media queries start
+$ipad-landscape: 'only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)';
+$ipad-portrait: 'only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)';
+$iphone4-landscape: 'only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape)';
+$iphone4-portrait: 'only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait)';
+$iphone5-landscape: 'only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape)';
+$iphone5-portrait: 'only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait)';
+$iphone6-landscape: 'only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape)';
+$iphone6-portrait: 'only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait)';
+$iphone6P-landscape: 'only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape)';
+$iphone6P-portrait: 'only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait)';
+$samsung-gs4-landscape: 'only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape)';
+$samsung-gs4-portrait: 'only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait)';
+$samsung-gs5-landscape: 'only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape)';
+$samsung-gs5-portrait: 'only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait)';
+
+
+
+$ipad-landscape-height: 661px;
+$ipad-portrait-height: 888px;
+$iphone4-landscape-height: 275px;
+$iphone4-portrait-height: 435px;
+$iphone5-landscape-height: 275px;
+$iphone5-portrait-height: 523px;
+$iphone6-landscape-height: 300px;
+$iphone6-portrait-height: 560px;
+$iphone6p-landscape-height: 330px;
+$iphone6p-portrait-height: 630px;
+$samsung-gs4-landscape-height: 275px;
+$samsung-gs4-portrait-height: 560px;
+$samsung-gs5-landscape-height: 285px;
+$samsung-gs5-portrait-height: 560px;
+// ------------------- common -------------------
+$popupHeaderBgColor: #ffffff;
+$popupCloseBgColor:#032237;
+$popupBgColor: #414447;
+$popupTitleTextSize: 16px;
+$popupTitleTextFont: $bold;
+$popupTitleTextColor: #032237;
+$scrollHandleColor: #ff9901;
+$scrollTrackColor: #40464e;
+$primaryColor: #053e62;
+$secondaryColor: #2980b9;
+// ------------------- Wrapper Dimensions -------------------
+$bodyBgColor: #21252b;
+$wrapperWidth: 1024px;
+$wrapperHeight: 672px;
+$wrapperBgColor: #f4f4f4;
+$preloadImgWidth: 64px;
+$preloadImgHeight: 64px;
+$preloadBgColor: #282828;
+$wrapperIpadHeight: 881px;
+// ------------- header -------------------
+$headerWidth: $wrapperWidth;
+$headerHeight: 45px;
+$headerBgColor: rgba(255, 255, 255, 0.8);
+$logoBgColor: rgba(255, 255, 255, 0);
+$courseTitleTextColor: #084369;
+$titleTextColor: #084369;
+$titleBgColor: rgba(255, 255, 255, 0);
+// ------------- footer -------------------
+$footerWidth: 460px;
+$footerHeight: 40px;
+$footerBgColor: $primaryColor;
+// ------------- section -------------------
+$contentWidth: $wrapperWidth;
+$contentHeight: $wrapperHeight;
+$contentBgColor: rgba(0, 0, 0, 0);
+$contentIpadHeight: $wrapperIpadHeight;
+// ------------- menu -------------------
+$menuContainerWidth: 100%;
+$menuContainerHeight: 100%;
+$menuContainerBgColor: rgba(0, 0, 0, 0.6);
+$menuWidth: 700px;
+$menuHeight: 400px;
+$menuBgColor: $popupBgColor;
+$menuMarginLeft: -1 * ($menuWidth / 2);
+$menuMarginTop: -1 * ($menuHeight / 2);
+$menuHeaderWidth: $menuWidth;
+$menuHeaderHeight: 40px;
+$menuHeaderBgColor: #ffffff;
+$menuCloseBtnWidth: 40px;
+$menuCloseBtnHeight: 40px;
+$menuContentWidth: $menuWidth;
+$menuContentHeight: $menuHeight - $menuHeaderHeight;
+$menuContentBgColor: rgba(255, 255, 255, 0);
+$menuColor: #ffffff;
+
+// ------------- Transcript -------------------
+$transcriptPopupWidth: $wrapperWidth;
+$transcriptPopupHeight: $wrapperHeight - ($headerHeight+$footerHeight+15);
+$transBoxWidth: 350px;
+$transBoxHeight: 160px;
+$transBoxBgColor: $popupBgColor;
+$transHeaderWidth: $transBoxWidth;
+$transHeaderHeight: 30px;
+$transCloseBtnWidth: 30px;
+$transCloseBtnHeight: 30px;
+$transContentWidth: $transBoxWidth - 16;
+$transContentHeight: $transBoxHeight - ($transHeaderHeight+16);
+$transContentBgColor: $transBoxBgColor;
+$transContentColor: #ffffff;
+// ------------- Resource -------------------
+$resourcePopupWidth: 100%;
+$resourcePopupHeight: 100%;
+$resourcePopupBgColor: rgba(0, 0, 0, 0.6);
+$resourceWidth: 700px;
+$resourceHeight: 400px;
+$resourceBgColor: $popupBgColor;
+$resourceMarginLeft: -1 * ($resourceWidth / 2);
+$resourceMarginTop: -1 * ($resourceHeight / 2);
+$resourceHeaderWidth: $resourceWidth;
+$resourceHeaderHeight: 40px;
+$resourceCloseBtnWidth: 40px;
+$resourceCloseBtnHeight: 40px;
+$resourceContentWidth: $resourceWidth;
+$resourceContentHeight: $resourceHeight - ($resourceHeaderHeight);
+$resourceContentBgColor: rgba(255, 255, 255, 0);
+$resourceColor: #ffffff;
+// ------------- Glossary -------------------
+$glossaryPopupWidth: 100%;
+$glossaryPopupHeight: 100%;
+$glossaryPopupBgColor: rgba(0, 0, 0, 0.6);
+$glossaryWidth: 700px;
+$glossaryHeight: 400px;
+$glossaryBgColor: $popupBgColor;
+$glossaryMarginLeft: -1 * ($glossaryWidth / 2);
+$glossaryMarginTop: -1 * ($glossaryHeight / 2);
+$glossaryHeaderWidth: $glossaryWidth;
+$glossaryHeaderHeight: 40px;
+$glossaryCloseBtnWidth: 40px;
+$glossaryCloseBtnHeight: 40px;
+$glossaryContentWidth: $glossaryWidth;
+$glossaryContentHeight: $glossaryHeight - $glossaryHeaderHeight;
+$glossaryContentBgColor: rgba(255, 255, 255, 0);
+$glossary-color: #fff;
+$glossary-col-1-width: 40px;
+$glossary-col-1-height: $glossaryContentHeight;
+$glossary-col-1-bgcolor: #2980b9;
+$glossary-col-2-width: 220px;
+$glossary-col-2-height: $glossaryContentHeight;
+$glossary-col-2-bgcolor: #032238;
+$glossary-col-3-width: $glossaryWidth - ($glossary-col-1-width+$glossary-col-2-width);
+$glossary-col-3-height: $glossaryContentHeight;
+$glossary-col-3-bgcolor:#2f3b44;
+// ------------- Glossary -------------------
+$ccContainerWidth: $wrapperWidth;
+$ccContainerHeight: auto;
+$ccBgColor: rgba(0, 0, 0, 0.8);
+// ------------- mixins -------------------
+.displayTable {
+    position: relative;
+    display: table;
+}
+
+.displayTableCell {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.noTextSelect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin box-shadow($x, $y, $blur, $thick, $color) {
+    -webkit-box-shadow: $x $y $blur $thick $color;
+    -moz-box-shadow: $x $y $blur $thick $color;
+    -ms-box-shadow: $x $y $blur $thick $color;
+    box-shadow: $x $y $blur $thick $color;
+}
+
+@mixin bgImage($url, $size, $repeat) {
+    background-image: url($url);
+    background-size: $size;
+    background-repeat: $repeat;
+}
+
+@mixin rotateY($deg) {
+    -webkit-transform: rotateY($deg);
+    transform: rotateY($deg);
+}
+
+.clearFix {
+    clear: both;
+}
