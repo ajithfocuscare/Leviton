@@ -1,0 +1,60 @@
+{
+    "audioSRC": "pages/module_1/page_4/audios/main.mp3",
+
+    "imgCollage": {
+              "desktop": [{
+                  "imageSRC": "pages/module_1/page_4/images/p1_bgimg.png",
+                  "altText": "Cake Image"
+              }],
+              "portrait": [{
+                  "imageSRC": "pages/module_1/page_4/images/p1_portraite.png",
+                  "altText": "Cake Image"
+              }]
+          },
+
+    "arrowimg": {
+        "imageSRC": "pages/module_1/page_4/images/p6_arrow.png",
+        "altText": "Cake Image"
+    },
+
+    "title": "Course Objectives",
+    "mainOst": {
+        "paraText": [""],
+        "list": []
+    },
+    "leftContent": {
+        "paraText": ["By the end of this course, you will be able to:"],
+        "list": []
+    },
+    "rightContent": {
+  "list": ["Define workplace harassment", "Define sexual harassment","Define retaliation","Define workplace discrimination", "Identify laws regarding discrimination", "Identify who must report harassment", "Know what to expect when reporting harassment","Identify benefits of workplace diversity"]
+  },
+
+
+    "list": [
+        "Define Risk and Risk Management",
+        "Explain 3 Lines of Defense in Risk Management",
+        "Understand the Risk Issue Management Process Overview",
+        "Execute the Risk Analysis Lifecycle",
+        "Relate Continuous Control Monitoring to Risk Issues",
+        "Discuss Policies and Standards related to Risk Analysis"
+    ],
+
+
+    "transcriptText": [
+        [
+            "By the end of this course, you will be able to define what workplace and sexual harassment is, learn about retaliation and the laws that govern harassment and how to identify and report harassment."
+        ]
+    ],
+
+    "ccText": [
+        [
+            { "text": "Hello, and welcome to the Privacy Overview module.", "startTime": 0, "endTime": 6.2 },
+            { "text": "When it comes to patient information it is especially important that we understand the regulations and guidelines so we can protect patient privacy.", "startTime": 6.4, "endTime": 15.9 },
+            { "text": "Explain the need for standardization in the secure chip industry.", "startTime": 16.1, "endTime": 21 },
+            { "text": "Describe how GlobalPlatform provides solutions to facilitate secure chip acceptance.", "startTime": 21.2, "endTime": 27.3 },
+            { "text": "Build a root of trust using a GlobalPlatform device.", "startTime": 27.5, "endTime": 31.3 },
+            { "text": "Choose the best management model according to your ecosystem.", "startTime": 31.5, "endTime": 35.5 }
+        ]
+    ]
+}

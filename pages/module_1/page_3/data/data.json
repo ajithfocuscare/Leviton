@@ -1,0 +1,38 @@
+{
+    "audioSRC": "pages/module_1/page_3/audios/main.mp3",
+
+    "imgCollage": {
+               "desktop": [{
+                   "imageSRC": "pages/module_1/page_3/images/p1_bgimg.png",
+                   "altText": "Cake Image"
+               }],
+               "portrait": [{
+                   "imageSRC": "pages/module_1/page_3/images/p1_portraite.png",
+                   "altText": "Cake Image"
+               }]
+           },
+
+    "title": "Course Overview",
+
+    "content": ["The purpose of this training program is to help familiarize you with the essential information needed so you can do your part in maintaining a harassment-and discrimination-free workplace", "This course covers four main topics:"],
+
+    "boxContent": ["Workplace Harassment", "Workplace Discrimination", "Reporting Harassment","Workplace Diversity"],
+
+
+    "transcriptText": [
+        [
+        "<p>The purpose of this training program is to help familiarize you with the essential information needed so you can do your part in maintaining a harassment- and discrimination-free workplace.</p><p>This course covers four main topics;</p><p>Workplace Harassment, Workplace Discrimination, Reporting Harassment and Workplace Diversity.</p><p>When you have completed this course, you must take and pass a knowledge test.</p>"
+        ]
+    ],
+
+    "ccText": [
+        [
+            { "text": "Hello, and welcome to the Privacy Overview module.", "startTime": 0, "endTime": 6.2 },
+            { "text": "When it comes to patient information it is especially important that we understand the regulations and guidelines so we can protect patient privacy.", "startTime": 6.4, "endTime": 15.9 },
+            { "text": "Explain the need for standardization in the secure chip industry.", "startTime": 16.1, "endTime": 21 },
+            { "text": "Describe how GlobalPlatform provides solutions to facilitate secure chip acceptance.", "startTime": 21.2, "endTime": 27.3 },
+            { "text": "Build a root of trust using a GlobalPlatform device.", "startTime": 27.5, "endTime": 31.3 },
+            { "text": "Choose the best management model according to your ecosystem.", "startTime": 31.5, "endTime": 35.5 }
+        ]
+    ]
+}

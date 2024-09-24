@@ -1,0 +1,190 @@
+@import "../../../../css/mixins.scss";
+@import "../../../../css/media_query.scss";
+
+$page-font-color: #333333;
+$box-min-height: 77px;
+$box-border: 11px solid rgba(255, 255, 255, 0.5);
+$box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+$box-margin-top: 30px;
+$box-colors: #084369, #084369, #084369, #084369, #074c88, #680788;
+$box-font-color: #ffffff;
+
+.f_page_content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  text-align: left;
+  color: $page-font-color;
+  background-color: #fff;
+}
+
+#f_page_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: scale(1.2);
+  transform-origin: center center;
+  background-repeat: no-repeat;
+}
+
+//------------------------------------------------------------------------
+.animat-containar {
+  position: relative;
+  float: left;
+  width: calc(80% - 80px);
+  height: auto;
+  margin-top: 80px;
+  margin-left: 40px;
+  overflow: hidden;
+@include tablet-portrait{
+  margin-top: 150px;
+}
+  @include mobile-portrait {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+  }
+
+
+  @include mobile-landscape {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-top: 100px;
+  }
+
+
+  .title_text {
+    position: relative;
+    float: left;
+    height: auto;
+    font-family: 'RobotoBold', sans-serif;
+    font-size: 24px;
+    left: -152px;
+    opacity: 0;
+    padding-bottom: 20px;
+    color: #084369;
+  }
+
+  .para_text {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    text-align: -webkit-auto;
+    line-height: 21px;
+
+    p {
+      position: relative;
+      float: left;
+      margin-bottom: 15px;
+      left: -182px;
+      opacity: 0;
+      clear: both;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+//------------------------------------------------------------------------
+.f_box_container {
+  position: relative;
+  float: left;
+  width: calc(100% - 80px);
+  height: auto;
+  margin-left: 40px;
+  margin-bottom: 50px;
+
+  @include tablet-portrait {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+  }
+
+
+  @include mobile-portrait {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+  }
+
+
+  @include mobile-landscape {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+  }
+
+
+  .f_step_box {
+    float: left;
+    position: relative;
+    width: calc(19.5% - 10px);
+    min-height: $box-min-height;
+    margin: 0px 30px;
+    padding: 44px;
+    left: 30px;
+    opacity: 0;
+    border-top: $box-border;
+    border-radius: 4px 4px 0px 0px;
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    -ms-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+
+    @include tablet-portrait {
+      width: calc(25% - 20px);
+      margin: 0px 10px;
+    }
+
+
+    @include mobile-portrait {
+      width: calc(100% - 20px);
+      margin: 0px 10px;
+      min-height: auto;
+    }
+
+
+    @include mobile-landscape {
+      width: calc(50% - 20px);
+      margin: 0px 10px;
+      min-height: 120px;
+    }
+
+
+    p {
+      float: left;
+      margin-bottom: 0;
+      color: $box-font-color;
+    }
+  }
+}
+
+@for $i from 1 through length($box-colors) {
+  .f_step_box:nth-child(#{$i}) {
+    margin-top: $i * $box-margin-top;
+    background-color: nth($box-colors, $i);
+
+    @include tablet-portrait {
+      @if $i < 4 {
+        margin-top: $i * $box-margin-top;
+      }
+      @else {
+        margin-top: (($i - 3) * $box-margin-top) !important;
+      }
+    }
+
+
+    @include mobile-portrait {
+      margin-top: 20px;
+    }
+
+
+    @include mobile-landscape {
+      margin-top: 20px;
+    }
+  }
+}
