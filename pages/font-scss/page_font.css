@@ -1,0 +1,45 @@
+/*
+Error: Invalid CSS after "...(RobotoRegular,": expected ")", was "../css/fonts/Ro..."
+        on line 19 of C:\xampp\htdocs\projects\framework\FW_tmp\V3_mobile\pages\font-scss\page_font.scss
+
+14:         src: $src;
+15:     }
+16: }
+17: 
+18: @include font-face(RobotoRegular,
+19: ../css/fonts/RobotoRegular,
+20: null,
+21: null,
+22: ttf woff);
+23: @include font-face(RobotoItalic,
+24: ../css/fonts/RobotoItalic,
+
+Backtrace:
+C:\xampp\htdocs\projects\framework\FW_tmp\V3_mobile\pages\font-scss\page_font.scss:19
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:730:in `assert_tok'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:109:in `parse_mixin_include_arglist'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1134:in `sass_script'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:251:in `include_directive'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:234:in `special_directive'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:209:in `directive'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...(RobotoRegular,\": expected \")\", was \"../css/fonts/Ro...\"\A         on line 19 of C:\xampp\htdocs\projects\framework\FW_tmp\V3_mobile\pages\font-scss\page_font.scss\A \A 14:         src: $src;\A 15:     }\A 16: }\A 17: \A 18: @include font-face(RobotoRegular,\A 19: ../css/fonts/RobotoRegular,\A 20: null,\A 21: null,\A 22: ttf woff);\A 23: @include font-face(RobotoItalic,\A 24: ../css/fonts/RobotoItalic,"; }

@@ -1,0 +1,94 @@
+//media queries start
+$ipad-landscape: 'only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)';
+$ipad-portrait: 'only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)';
+$iphone4-landscape: 'only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape)';
+$iphone4-portrait: 'only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait)';
+$iphone5-landscape: 'only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape)';
+$iphone5-portrait: 'only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait)';
+$iphone6-landscape: 'only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape)';
+$iphone6-portrait: 'only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait)';
+$iphone6P-landscape: 'only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape)';
+$iphone6P-portrait: 'only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait)';
+$samsung-gs4-landscape: 'only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape)';
+$samsung-gs4-portrait: 'only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait)';
+$samsung-gs5-landscape: 'only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape)';
+$samsung-gs5-portrait: 'only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait)';
+$ipad-landscape-height: 661px;
+$ipad-portrait-height: 888px;
+$iphone4-landscape-height: 275px;
+$iphone4-portrait-height: 435px;
+$iphone5-landscape-height: 275px;
+$iphone5-portrait-height: 523px;
+$iphone6-landscape-height: 300px;
+$iphone6-portrait-height: 560px;
+$iphone6p-landscape-height: 330px;
+$iphone6p-portrait-height: 630px;
+$samsung-gs4-landscape-height: 275px;
+$samsung-gs4-portrait-height: 560px;
+$samsung-gs5-landscape-height: 285px;
+$samsung-gs5-portrait-height: 560px;
+// ------------------- common -------------------
+$scrollHandleColor: #ff9901;
+$scrollTrackColor: #40464e;
+$popupHeaderBgColor: #ffffff;
+$popupCloseBgColor:#032237;
+$popupBgColor: #414447;
+$popupTitleTextSize: 16px;
+$popupTitleTextColor: #032237;
+$scrollHandleColor: #ff9901;
+$scrollTrackColor: #40464e;
+$primaryColor: #053e62;
+$secondaryColor: #2980b9;
+// ------------- page variables -------------------
+$leftSideColor: rgba(255, 255, 255, 1);
+$leftSideWidthDeskTop: 424px;
+$leftSideWidthIpadPortrait: 324px;
+$rightSideColor: rgba(34, 54, 111, 1);
+$rightSideWidthDeskTop: 600px;
+$rightSideWidthIpadPortrait: 444px;
+$optionColor: rgba(255, 181, 46, 1);
+$optionSelectedColor: rgba(255, 181, 46, 1);
+$optionOverColor: rgba(255, 255, 255, 0.1);
+$submitBtnColor: rgba(255, 181, 46, 1);
+$submitOverColor: rgba(255, 239, 46, 1);
+// ------------- mixins -------------------
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin box-shadow($x, $y, $blur, $thick, $color) {
+    -webkit-box-shadow: $x $y $blur $thick $color;
+    -moz-box-shadow: $x $y $blur $thick $color;
+    -ms-box-shadow: $x $y $blur $thick $color;
+    box-shadow: $x $y $blur $thick $color;
+}
+
+@mixin bgImage($url, $size, $repeat) {
+    background-image: url($url);
+    background-size: $size;
+    background-repeat: $repeat;
+}
+
+@mixin rotateY($deg) {
+    -webkit-transform: rotateY($deg);
+    transform: rotateY($deg);
+}
+
+// ------------- common scroll -------------------
+.ssScrollTrack {
+    width: 1px;
+    margin: 0px 0px 0px -4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 0px;
+}
+
+.ssScrollHandle {
+    width: 5px;
+    height: 60px;
+    background-color: rgba(156, 0, 0, 0.5);
+    margin-left: -2px;
+    border-radius: 0px;
+}

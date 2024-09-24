@@ -1,0 +1,105 @@
+{
+    "audioSRC": "pages/assessment/audios/main.mp3",
+    "bgImgs": [{
+        "imageSRC": "pages/assessment/images/assessment_bg.png"
+    }, {
+        "imageSRC": "pages/assessment/images/assessment_bg_1_.png"
+    }, {
+        "imageSRC": "pages/assessment/images/assessment_gold_1.png"
+    }, {
+        "imageSRC": "pages/assessment/images/assessment_gold_2.png"
+    }],
+    "introtext": ["You have now completed all of the modules in the GlobalPlatform Online Card Specifications Training program. You will now be able to test your understanding of the course material.", "What follows are 10 questions. Your scores will be displayed on the Results page after you finish answering all of the questions in the assessment.", "If you score 80 percent or above, you will have successfully completed the course and will receive a “Certificate of Course Achievement” to acknowledge your technical competence. If you should score less than 80 percent, you will be able to retake the assessment to achieve the passing score."],
+    "introimage": {
+        "imageSRC": "pages/assessment/images/assessment_intro_bg.png",
+        "altText": "Mic"
+    },
+    "begintxt": "When you are ready, <b>click Begin Assessment</b> to proceed.",
+    "beginButtontext": "Begin",
+
+    "questions": [{
+            "question": "How many employees were hired in our company last year?",
+            "options": ["Last year we hired more than one hundred, but less than five hundred new employees.", "Last year we hired more than fifty, but less than one hundred new employees.", "Last year we hired more than five hundred new employees.", "Above all."],
+            "ansId": [0],
+            "instruction": ["Instruction", "Select the correct option and click <b>Submit.</b>"]
+        },
+        {
+            "question": "Who is responsible for content management of a UICC?",
+            "options": ["Handset Manufacturer", "MNO", "Bank"],
+            "ansId": [0, 1],
+            "instruction": ["Instruction", "Select the correct options and click <b>Submit.</b>"]
+        },
+        {
+            "question": "Who is responsible for content management of a UICC?",
+            "options": ["Handset Manufacturer", "MNO", "Bank"],
+            "ansId": [0],
+            "instruction": ["Instruction", "Select the correct option and click <b>Submit.</b>"]
+        },
+        {
+            "question": "Who is responsible for content management of a UICC?",
+            "options": ["Handset Manufacturer", "MNO", "Bank"],
+            "ansId": [0, 1],
+            "instruction": ["Instruction", "Select the correct options and click <b>Submit.</b>"]
+        },
+        {
+            "question": "Who is responsible for content management of a UICC?",
+            "options": ["Handset Manufacturer", "MNO", "Bank"],
+            "ansId": [0],
+            "instruction": ["Instruction", "Select the correct option and click <b>Submit.</b>"]
+        },
+        {
+            "question": "Who is responsible for content management of a UICC?",
+            "options": ["Handset Manufacturer", "MNO", "Bank"],
+            "ansId": [0, 1],
+            "instruction": ["Instruction", "Select the corrects option and click <b>Submit.</b>"]
+        },
+        {
+            "question": "Who is responsible for content management of a UICC?",
+            "options": ["Handset Manufacturer", "MNO", "Bank"],
+            "ansId": [0],
+            "instruction": ["Instruction", "Select the correct option and click <b>Submit.</b>"]
+        },
+        {
+            "question": "Who is responsible for content management of a UICC?",
+            "options": ["Handset Manufacturer", "MNO", "Bank"],
+            "ansId": [0, 1],
+            "instruction": ["Instruction", "Select the correct options and click <b>Submit.</b>"]
+        },
+        {
+            "question": "Who is responsible for content management of a UICC?",
+            "options": ["Handset Manufacturer", "MNO", "Bank"],
+            "ansId": [0, 1],
+            "instruction": ["Instruction", "Select the correct option and click <b>Submit.</b>"]
+        }
+    ],
+
+    "failresults": ["The passing score is 80 %.", "Your score is <span class='f_scoreTxt'>20%</span>. You may retake the assessment to achieve a passing score. If you want to refer to any module in the training program prior to retaking the assessment, click the Home button, and select the desired module from that page."],
+    "failretakeimage": {
+        "imageSRC": "pages/assessment/images/assessment_retake.png",
+        "altText": "Mic"
+    },
+    "failresulttext": "To redo the assessment, click Retake Assessment.",
+
+    "passresults": ["Congratulations! <br>You have passed the assessment.", "Your score is <span class='f_scoreTxt'>20%</span>.", "Your Certificate of Course Achievement will be emailed to you shortly. You will also be receiving a link to a survey regarding your experience in taking this online training course. Your feedback is important to us and will help us to continuously improve our training offerings.", "Thank you again for taking the GlobalPlatform Online Card Specifications Training Program. For information about our instructor-led sessions."],
+    "passimage": {
+        "imageSRC": "pages/assessment/images/assessment_win.png",
+        "altText": "Mic"
+    },
+
+    "transcriptText": [
+        [
+            "You have now completed all of the modules in the GlobalPlatform Online Card Specifications Training program. You will now be able to test your understanding of the course material.", "What follows are 10 questions. Your scores will be displayed on the Results page after you finish answering all of the questions in the assessment.", "If you score 80 percent or above, you will have successfully completed the course and will receive a “Certificate of Course Achievement” to acknowledge your technical competence. If you should score less than 80 percent, you will be able to retake the assessment to achieve the passing score."
+        ]
+    ],
+
+    "ccText": [
+        [
+            { "text": "You have now completed all of the modules in the GlobalPlatform Online Card Specifications Training program.", "startTime": 0, "endTime": 7 },
+            { "text": "You will now be able to test your understanding of the course material.", "startTime": 7.2, "endTime": 11.4 },
+            { "text": "What follows are 10 questions. Your scores will be displayed on the Results page after you finish answering all of the questions in the assessment.", "startTime": 11.6, "endTime": 20.7 },
+            { "text": "If you score 80 percent or above, ", "startTime": 20.9, "endTime": 23 },
+            { "text": "you will have successfully completed the course and will receive a “Certificate of Course Achievement” to acknowledge your technical competence.", "startTime": 23.2, "endTime": 30.9 },
+            { "text": "If you should score less than 80 percent, you will be able to retake the assessment to achieve the passing score.", "startTime": 31.1, "endTime": 37.7 }
+        ]
+    ]
+}

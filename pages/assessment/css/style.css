@@ -1,0 +1,513 @@
+.ssScrollTrack {
+  width: 1px;
+  margin: 0px 0px 0px -4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  top: 0px;
+}
+
+.ssScrollHandle {
+  width: 5px;
+  height: 60px;
+  background-color: rgba(156, 0, 0, 0.5);
+  margin-left: -2px;
+  border-radius: 0px;
+}
+
+.f_page_content {
+  position: absolute;
+  line-height: normal;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+#f_assessmentBase {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  background-color: #31708f;
+  opacity: 1;
+}
+
+#f_assessmentBase .f_triangleOne {
+  position: absolute;
+  width: 451px;
+  height: 161px;
+  right: 0;
+  bottom: -20px;
+  opacity: 0.1;
+  background-image: url("../images/assessment_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#f_assessmentBase .f_triangleTwo {
+  position: absolute;
+  width: 451px;
+  height: 161px;
+  left: 0;
+  top: -40px;
+  opacity: 0.1;
+  background-image: url("../images/assessment_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#f_assessmentIntro {
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  left: 0px;
+  overflow: hidden;
+  display: block;
+  top: 50%;
+  margin-top: -175px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #f_assessmentIntro {
+    height: 350px;
+    margin-top: -175px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #f_assessmentIntro {
+    height: 700px;
+    margin-top: -350px;
+  }
+}
+
+#f_assessmentIntro #f_assetIntroImg1 {
+  position: relative;
+  float: right;
+  width: 520px;
+  height: 350px;
+  opacity: 0;
+  margin-right: 0px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #f_assessmentIntro #f_assetIntroImg1 {
+    width: 520px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #f_assessmentIntro #f_assetIntroImg1 {
+    width: calc(100% - 60px);
+  }
+}
+
+#f_assessmentIntro #f_assetIntroImg1 img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#f_assessmentIntro #f_assetIntroText {
+  position: relative;
+  float: left;
+  width: 410px;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  opacity: 0;
+  margin-left: 0px;
+}
+
+#f_assessmentIntro #f_assetIntroText p {
+  font-size: 14px;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+#f_assessmentIntro #f_assetIntroText p:last-child {
+  margin-bottom: 0px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #f_assessmentIntro #f_assetIntroText {
+    width: 410px;
+    height: 350px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #f_assessmentIntro #f_assetIntroText {
+    width: calc(100% - 60px);
+    height: 250px;
+  }
+}
+
+#f_assessmentIntro #f_beginAssessmentBtn {
+  position: absolute;
+  float: right;
+  width: auto;
+  height: auto;
+  padding: 5px 15px;
+  font-size: 16px;
+  right: 20px;
+  bottom: 20px;
+  margin-top: 20px;
+  color: #333333;
+  background-color: #ffd601;
+  font-family: "RobotoBold", sans-serif;
+  opacity: 0;
+  display: none;
+}
+
+#f_assessmentContainer {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  left: 0;
+  top: 50%;
+  display: none;
+  margin-top: -200px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #f_assessmentContainer {
+    height: 400px;
+    margin-top: -200px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #f_assessmentContainer {
+    height: 500px;
+    margin-top: -250px;
+  }
+}
+
+#f_assessmentContainer #f_mc_puzzleContainer {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  overflow: hidden;
+  opacity: 0;
+  left: 50%;
+  margin-left: -200px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #f_assessmentContainer #f_mc_puzzleContainer {
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    margin-left: -200px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #f_assessmentContainer #f_mc_puzzleContainer {
+    width: 250px;
+    height: 500px;
+    left: 50%;
+    margin-left: -125px;
+  }
+}
+
+#f_assessmentContainer #f_mc_puzzleContainer #resultImg {
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  left: 5px;
+  top: 5px;
+  background-image: url("../images/assessment_gold_1.png");
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #f_assessmentContainer #f_mc_puzzleContainer #resultImg {
+    background-image: url("../images/assessment_gold_1.png");
+    background-size: auto auto;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #f_assessmentContainer #f_mc_puzzleContainer #resultImg {
+    background-image: url("../images/assessment_gold_2.png");
+    background-size: auto auto;
+    background-repeat: no-repeat;
+  }
+}
+
+#f_assessmentContainer #f_mc_puzzleContainer .tile {
+  position: relative;
+  float: left;
+  width: 130px;
+  height: 130px;
+  margin: 0;
+  background-color: #333333;
+  background-image: url("../images/quesmark.png");
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  opacity: 0;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #f_assessmentContainer #f_mc_puzzleContainer .tile {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #f_assessmentContainer #f_mc_puzzleContainer .tile {
+    width: 80px;
+    height: 163px;
+  }
+}
+
+#f_assessmentContainer #f_mc_puzzleContainer .col1 {
+  background-color: #ec952e;
+}
+
+#f_assessmentContainer #f_mc_puzzleContainer .col2 {
+  background-color: #eca772;
+}
+
+#f_assessmentContainer #f_mc_puzzleContainer .puzzleSelected {
+  background-color: #6d37a9;
+  cursor: default;
+}
+
+#f_assessmentContainer #f_mc_puzzleContainer .puzzleDisabled {
+  background-color: #969191;
+  background-image: url("../images/Xmark.png");
+  background-size: auto auto;
+  background-repeat: no-repeat;
+}
+
+#f_assessmentContainer #f_mc_quizContainer {
+  float: right;
+  position: relative;
+  width: 564px;
+  height: 400px;
+  text-align: left;
+  overflow: hidden;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 0 0 10px;
+  margin-right: 0;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #f_assessmentContainer #f_mc_quizContainer {
+    width: 564px;
+    height: 400px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #f_assessmentContainer #f_mc_quizContainer {
+    width: 458px;
+    height: 500px;
+  }
+}
+
+#f_assessmentContainer #f_mc_quizContainer #f_mc_question {
+  float: left;
+  width: 100%;
+  font-size: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 0px;
+}
+
+#f_assessmentContainer #f_mc_quizContainer #f_mc_question #f_mc_questionText {
+  float: left;
+  width: 100%;
+  padding: 10px 20px 10px 10px;
+  color: #333333;
+  background-color: #ffd601;
+}
+
+#f_assessmentContainer #f_mc_quizContainer #f_mc_question #f_mc_instruction {
+  float: left;
+  width: calc(100% + 1px);
+  min-height: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: table;
+  opacity: 1;
+  display: block;
+  font-family: "RobotoItalic";
+  font-size: 13px;
+}
+
+#f_assessmentContainer #f_mc_quizContainer #f_mc_question #f_mc_instruction #f_mc_ins {
+  color: #ffffff;
+  min-height: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  text-align: center;
+  padding: 0 10px;
+}
+
+#f_assessmentContainer #f_mc_quizContainer #f_mc_question #f_mc_instruction #f_mc_insText {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#f_assessmentContainer #f_mc_quizContainer #f_mc_optionContainer {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+#f_assessmentContainer #f_mc_quizContainer #f_mc_optionContainer .f_mc_optionBtn {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 50px;
+  padding: 5px 20px 5px 10px;
+  color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  background-color: transparent;
+  left: 0px;
+}
+
+#f_assessmentContainer #f_mc_quizContainer #f_mc_optionContainer .f_mc_optionBtn .f_mc_optionType {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: -15px;
+  top: 50%;
+  left: 40px;
+}
+
+#f_assessmentContainer #f_mc_quizContainer #f_mc_optionContainer .f_mc_optionBtn .f_mc_optionType .f_mc_innerBox {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 50%;
+  top: 50%;
+  margin-top: -7px;
+  margin-left: -7px;
+}
+
+#f_assessmentContainer #f_mc_quizContainer #f_mc_optionContainer .f_mc_optionBtn .radio {
+  border-radius: 30px;
+}
+
+#f_assessmentContainer #f_mc_quizContainer #f_mc_optionContainer .f_mc_optionBtn .radio .f_mc_innerBox {
+  border-radius: 20px;
+}
+
+#f_assessmentContainer #f_mc_quizContainer #f_mc_optionContainer .f_mc_optionBtn .f_mc_optionText {
+  position: relative;
+  width: calc(100% - 75px);
+  margin-left: 75px;
+  display: table;
+  line-height: normal;
+}
+
+#f_assessmentContainer #f_mc_quizContainer #f_mc_optionContainer #f_mc_submitBtn {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 8px 15px;
+  font-size: 16px;
+  right: 20px;
+  bottom: 20px;
+  color: #333333;
+  background-color: #ffd601;
+  font-family: "RobotoBold", sans-serif;
+  display: none;
+}
+
+#f_assessmentContainer #f_mc_quizContainer .f_introText {
+  margin-bottom: 20px;
+}
+
+#f_assessmentContainer #f_mc_quizContainer .certText {
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-size: 18px;
+  color: #ffd601;
+  font-family: "RobotoBold", sans-serif;
+}
+
+#f_resultbar {
+  position: absolute;
+  bottom: 20px;
+  width: calc(100% - 40px);
+  height: 30px;
+  display: none;
+}
+
+#f_resultbar #f_retakeAssessmentBtn {
+  float: right;
+  width: auto;
+  height: 30px;
+  padding: 0px 15px;
+  font-size: 16px;
+  right: 20px;
+  bottom: 20px;
+  color: #333333;
+  background-color: #ffd601;
+  font-family: "RobotoBold", sans-serif;
+}
+
+#f_resultbar #f_resultIns {
+  float: left;
+  width: auto;
+  height: 30px;
+  margin: 0;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.f_mc_optionOver {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  -webkit-box-shadow: 0px 0px 0 1px rgba(255, 255, 255, 0.3);
+  -ms-box-shadow: 0px 0px 0 1px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.f_mc_submitOver {
+  background-color: #ffd601 !important;
+}
+
+.f_mc_selected {
+  background-color: #ffd601;
+}
+
+/*#ffd601*/
+/*# sourceMappingURL=style.css.map */
